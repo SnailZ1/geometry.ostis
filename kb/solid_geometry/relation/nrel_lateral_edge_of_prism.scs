@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_lateral_edge_of_prism;;
+sc_node_non_role_relation -> nrel_lateral_edge_of_prism;;
 
 nrel_lateral_edge_of_prism => nrel_main_idtf: [боковое ребро призмы*] (*<-lang_ru;;*);;
 nrel_lateral_edge_of_prism => nrel_main_idtf: [lateral edge of prism*] (*<-lang_en;;*);;

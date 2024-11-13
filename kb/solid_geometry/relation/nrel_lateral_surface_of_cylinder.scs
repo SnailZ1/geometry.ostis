@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_lateral_surface_of_cylinder;;
+sc_node_non_role_relation -> nrel_lateral_surface_of_cylinder;;
 
 nrel_lateral_surface_of_cylinder => nrel_main_idtf: [боковая поверхность цилиндра*] (*<-lang_ru;;*);;
 nrel_lateral_surface_of_cylinder => nrel_main_idtf: [lateral surface of cylinder*] (*<-lang_en;;*);;

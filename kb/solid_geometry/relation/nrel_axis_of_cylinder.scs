@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_axis_of_cylinder;;
+sc_node_non_role_relation -> nrel_axis_of_cylinder;;
 
 nrel_axis_of_cylinder => nrel_main_idtf: [ось цилиндра*] (*<-lang_ru;;*);;
 nrel_axis_of_cylinder => nrel_main_idtf: [axis of cylinder*] (*<-lang_en;;*);;

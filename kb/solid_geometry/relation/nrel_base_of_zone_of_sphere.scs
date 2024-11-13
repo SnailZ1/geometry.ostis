@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_base_of_zone_of_sphere;;
+sc_node_non_role_relation -> nrel_base_of_zone_of_sphere;;
 
 nrel_base_of_zone_of_sphere => nrel_main_idtf: [основание сферического пояса*] (*<-lang_ru;;*);;
 nrel_base_of_zone_of_sphere => nrel_main_idtf: [base of zone of sphere*] (*<-lang_en;;*);;

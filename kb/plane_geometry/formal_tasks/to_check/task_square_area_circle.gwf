@@ -567,7 +567,7 @@
         <node type="node/const/perm/group" idtf="question_search_for_requested_value" shapeColor="193" id="94166232399648" parent="0" left="0" top="0" right="284.938" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1007.34" y="-261.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/group" idtf="sc_node_struct" shapeColor="193" id="94166232382992" parent="0" left="0" top="0" right="120.219" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="949" y="-312" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/group" idtf="sc_node_structure" shapeColor="193" id="94166232382992" parent="0" left="0" top="0" right="120.219" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="949" y="-312" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <pair type="pair/const/pos/perm/orient/membership" idtf="" shapeColor="193" id="94166233721584" parent="0" id_b="94166233347920" id_e="94166233699264" b_x="682.5" b_y="-40.5" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.553073">

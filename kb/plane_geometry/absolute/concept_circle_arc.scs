@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_circle_arc;;
+sc_node_class -> concept_circle_arc;;
 
 concept_circle_arc => nrel_main_idtf:
 	[дуга](* <- lang_ru;;*);

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_rectilinear_figure;;
+sc_node_class -> concept_rectilinear_figure;;
 
 concept_rectilinear_figure => nrel_main_idtf:
 	[прямолинейная фигура] (* <- lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_polyline;;
+sc_node_class -> concept_polyline;;
 
 concept_polyline => nrel_main_idtf:
 	[ломаная](* <- lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_cos;;
+sc_node_non_role_relation -> nrel_cos;;
 
 nrel_cos => nrel_main_idtf:
 	[косинус*] 

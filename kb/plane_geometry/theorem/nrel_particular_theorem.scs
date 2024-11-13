@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_particular_theorem;;
+sc_node_non_role_relation -> nrel_particular_theorem;;
 
 nrel_particular_theorem -> nrel_main_idtf:
 	[частная теорема*] (* <- lang_ru;; *);

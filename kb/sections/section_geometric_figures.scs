@@ -42,5 +42,3 @@ section_geometric_figures
 
 		s_sd_geometric_figures
 	};;
-
-section_geometric_figures <- ui_start_sc_element;;

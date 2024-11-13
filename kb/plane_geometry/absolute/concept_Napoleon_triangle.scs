@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_Napoleon_triangle;;
+sc_node_class -> concept_Napoleon_triangle;;
 
 concept_Napoleon_triangle => nrel_main_idtf: [треугольник Наполеона] (*<-lang_ru;;*);;
 concept_Napoleon_triangle => nrel_main_idtf: [Napoleon triangle] (*<-lang_en;;*);;

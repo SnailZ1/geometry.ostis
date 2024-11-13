@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_diagonal_section_of_polyhedron;;
+sc_node_non_role_relation -> nrel_diagonal_section_of_polyhedron;;
 
 nrel_diagonal_section_of_polyhedron => nrel_main_idtf: [диагональное сечение многогранника*] (*<-lang_ru;;*);;
 nrel_diagonal_section_of_polyhedron => nrel_main_idtf: [diagonal section of polyhedron*] (*<-lang_en;;*);;

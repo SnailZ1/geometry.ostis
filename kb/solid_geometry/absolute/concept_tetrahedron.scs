@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_tetrahedron;;
+sc_node_class -> concept_tetrahedron;;
 
 concept_tetrahedron => nrel_main_idtf: 
 	[тетраэдр](*<-lang_ru;;*);

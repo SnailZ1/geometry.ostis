@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_regular_polygon;;
+sc_node_class -> concept_regular_polygon;;
 
 concept_regular_polygon => nrel_main_idtf:
 	[правильный многоугольник](* <- lang_ru;; *);

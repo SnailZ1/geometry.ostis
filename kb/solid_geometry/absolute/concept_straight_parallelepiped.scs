@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_straight_parallelepiped;;
+sc_node_class -> concept_straight_parallelepiped;;
 
 concept_straight_parallelepiped => nrel_main_idtf: [прямой параллепипед] (*<-lang_ru;;*);;
 concept_straight_parallelepiped => nrel_main_idtf: [straight parallelepiped] (*<-lang_en;;*);;

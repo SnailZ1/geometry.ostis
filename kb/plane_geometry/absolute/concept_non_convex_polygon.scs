@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_non_convex_polygon;;
+sc_node_class -> concept_non_convex_polygon;;
 
 concept_non_convex_polygon => nrel_main_idtf:
 	[невыпуклый многоугольник](* <- lang_ru;; *);

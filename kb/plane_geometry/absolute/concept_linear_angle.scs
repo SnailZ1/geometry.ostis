@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_linear_angle;;
+sc_node_class -> concept_linear_angle;;
 
 concept_linear_angle => nrel_main_idtf:
 	[линейный угол](* <- lang_ru;; *);

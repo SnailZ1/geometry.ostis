@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_height_of_solid_of_revolution;;
+sc_node_non_role_relation -> nrel_height_of_solid_of_revolution;;
 
 nrel_height_of_solid_of_revolution => nrel_main_idtf: [высота тела вращения*] (*<-lang_ru;;*);;
 nrel_height_of_solid_of_revolution => nrel_main_idtf: [height of solid of revolution*] (*<-lang_en;;*);;

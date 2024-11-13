@@ -653,7 +653,7 @@
         <node type="node/const/perm/relation" idtf="nrel_solution" shapeColor="193" id="94166252069328" parent="0" left="0" top="0" right="105.609" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1168" y="-261" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/perm/group" idtf="sc_node_struct" shapeColor="193" id="94166252051152" parent="0" left="0" top="0" right="120.219" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1112" y="-488" haveBus="false" idtf_pos="0">
+        <node type="node/const/perm/group" idtf="sc_node_structure" shapeColor="193" id="94166252051152" parent="0" left="0" top="0" right="120.219" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="1112" y="-488" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/perm/relation" idtf="nrel_sc_text_translation" shapeColor="193" id="94166251992864" parent="0" left="0" top="0" right="184.859" bottom="25" textColor="244" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="2070" y="60" haveBus="false" idtf_pos="0">

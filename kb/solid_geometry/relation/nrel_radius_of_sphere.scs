@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_radius_of_sphere;;
+sc_node_non_role_relation -> nrel_radius_of_sphere;;
 
 nrel_radius_of_sphere => nrel_main_idtf: [радиус сферы*] (*<-lang_ru;;*);;
 nrel_radius_of_sphere => nrel_main_idtf: [radius of sphere*] (*<-lang_en;;*);;

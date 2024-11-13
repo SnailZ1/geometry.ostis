@@ -2,7 +2,7 @@ ex4_s_sd_segments
 <- exercises_s_sd_segments;
 
 -> rrel_key_sc_element: concept_segment;
-<- rrel_key_sc_element: question_finding_length_of_the_segment;
+<- rrel_key_sc_element: action_finding_length_of_the_segment;
 
 => nrel_main_idtf:
 	[Упражнение 4. Раздел. Предметная область отрезков]

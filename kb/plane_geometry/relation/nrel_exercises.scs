@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_exercises;;
+sc_node_non_role_relation -> nrel_exercises;;
 
 nrel_exercises => nrel_main_idtf: [упражнения*]
 (* <- lang_ru;;*);;

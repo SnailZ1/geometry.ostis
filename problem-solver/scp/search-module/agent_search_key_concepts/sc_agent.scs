@@ -1,0 +1,52 @@
+sc_agent_of_key_concepts_searching
+=> nrel_main_idtf:
+	[sc-агент поиска ключевых узлов] (* <- lang_ru;; *);
+	[sc-agent of key concepts searching] (* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_condition_key => ..sc_agent_result_key);
+
+=> nrel_sc_agent_action_class:
+	action_find_key_concepts;
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_find_key_concepts
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_key_concepts_searching
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_proc_of_key_concepts_searching
+		};;
+
+	-> sc_agent_of_key_concepts_searching_scp
+		(* <- active_sc_agent;; *);;  
+	*);;
+
+..sc_agent_condition_key
+= [*
+	action_find_key_concepts _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_result_key
+= [*
+	action_find_key_concepts _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;

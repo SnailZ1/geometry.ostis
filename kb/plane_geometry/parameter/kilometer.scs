@@ -1,4 +1,4 @@
-kilometer <- sc_node_not_relation;;
+kilometer <- sc_node_class;;
 
 kilometer => nrel_main_idtf:
 	[километр]

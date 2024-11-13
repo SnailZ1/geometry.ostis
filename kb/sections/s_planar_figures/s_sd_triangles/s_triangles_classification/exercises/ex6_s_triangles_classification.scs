@@ -3,7 +3,7 @@ ex6_s_triangles_classification
 
 -> rrel_key_sc_element: concept_triangle; concept_rectangular_triangle; concept_right_angle; concept_isosceles_triangle; nrel_congruence;
 
-<- rrel_key_sc_element: question_proof_isosceles_triangle_right_triangle;
+<- rrel_key_sc_element: action_proof_isosceles_triangle_right_triangle;
 
 => nrel_main_idtf:
 	[Упражнение 6. Раздел. Основные понятия. Классификации треугольников]

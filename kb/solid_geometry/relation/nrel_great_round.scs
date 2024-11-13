@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_great_round;;
+sc_node_non_role_relation -> nrel_great_round;;
 
 nrel_great_round => nrel_main_idtf: [большой круг*] (*<-lang_ru;;*);;
 nrel_great_round => nrel_main_idtf: [great round*] (*<-lang_en;;*);;

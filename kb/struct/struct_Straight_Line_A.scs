@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Straight_Line_A;;
+sc_node_structure -> struct_Straight_Line_A;;
 
 struct_Straight_Line_A <- concept_straight_line;;
 

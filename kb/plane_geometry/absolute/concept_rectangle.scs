@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_rectangle;;
+sc_node_class -> concept_rectangle;;
 
 concept_rectangle => nrel_main_idtf:
 	[прямоугольник] (* <- lang_ru;; *);

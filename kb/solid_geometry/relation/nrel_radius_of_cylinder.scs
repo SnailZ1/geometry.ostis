@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_radius_of_cylinder;;
+sc_node_non_role_relation -> nrel_radius_of_cylinder;;
 
 nrel_radius_of_cylinder => nrel_main_idtf: [радиус цилиндра*] (*<-lang_ru;;*);;
 nrel_radius_of_cylinder => nrel_main_idtf: [radius of cylinder*] (*<-lang_en;;*);;

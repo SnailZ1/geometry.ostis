@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_obtuse_triangle;;
+sc_node_class -> concept_obtuse_triangle;;
 
 concept_obtuse_triangle => nrel_main_idtf:
 	[тупоугольный треугольник]

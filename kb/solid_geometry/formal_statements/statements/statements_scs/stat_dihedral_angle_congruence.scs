@@ -5,23 +5,31 @@ statement -> stat_reverse_converse_dihedral_angle_congruence;;
 
 stat_dihedral_angle_congruence => nrel_main_idtf: 
 	[Утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
-	[Stat.(dihedral angle; linear angle; congruence*)](* <lang_en;;*);;
+	[Stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
 stat_converse_dihedral_angle_congruence => nrel_main_idtf:
 	[Обр.утв.(двугранный угол; линейный угол; конгруэнтность**)] (* <- lang_ru;; *);
 	[Converse stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
-
-
 stat_reverse_dihedral_angle_congruence => nrel_main_idtf:
 	[Прот.утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
 	[Inverse stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
-
 
 stat_reverse_converse_dihedral_angle_congruence => nrel_main_idtf:
 	[Прот.обр.утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
 	[Contrapositive stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
+stat_converse_dihedral_angle_congruence => nrel_main_idtf:
+	[Обр.утв.(двугранный угол; линейный угол; конгруэнтность**)] (* <- lang_ru;; *);
+	[Converse stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
+
+stat_reverse_dihedral_angle_congruence => nrel_main_idtf:
+	[Прот.утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
+	[Inverse stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
+
+stat_reverse_converse_dihedral_angle_congruence => nrel_main_idtf:
+	[Прот.обр.утв.(двугранный угол; линейный угол; конгруэнтность*)] (* <- lang_ru;; *);
+	[Contrapositive stat.(dihedral angle; linear angle; congruence*)](* <-lang_en;;*);;
 
 stat_dihedral_angle_congruence <= nrel_sc_text_translation: ...
 	(*

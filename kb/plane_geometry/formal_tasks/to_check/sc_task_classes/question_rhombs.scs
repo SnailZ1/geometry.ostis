@@ -1,5 +1,5 @@
-sc_node_not_relation -> question_rhombs;;
-question_rhombs => nrel_main_idtf:
+sc_node_class -> action_rhombs;;
+action_rhombs => nrel_main_idtf:
 	[sc-задача на ромбы]
 	(* <- lang_ru;;	*);
 	[sc-task on rhombs]

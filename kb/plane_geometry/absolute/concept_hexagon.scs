@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_hexagon;;
+sc_node_class -> concept_hexagon;;
 
 concept_hexagon => nrel_main_idtf:
 	[шестиугольник](* <- lang_ru;; *);

@@ -1,35 +1,35 @@
-question <= nrel_subdividing: 
+action <= nrel_subdividing: 
 	{  
-	question_planimetry;
-	question_stereometry
+	action_planimetry;
+	action_stereometry
 	};;
 
-question <= nrel_subdividing: 
+action <= nrel_subdividing: 
 	{  
-	question_search_for_requested_value;
-	question_proof;
-	question_combined
+	action_search_for_requested_value;
+	action_proof;
+	action_combined
 	};;
 
-question <= nrel_subdividing: 
+action <= nrel_subdividing: 
 	{  
-	question_geometric_points;
-	question_straight_lines_segments;
-	question_polygons;
-	question_circles
+	action_geometric_points;
+	action_straight_lines_segments;
+	action_polygons;
+	action_circles
 	};;
 
-question_polygons <= nrel_subdividing: 
+action_polygons <= nrel_subdividing: 
 	{  
-	question_quadrilaterals;
-	question_triangles
+	action_quadrilaterals;
+	action_triangles
 	};;
 
-question_quadrilaterals <= nrel_subdividing: 
+action_quadrilaterals <= nrel_subdividing: 
 	{  
-	question_parallelograms;
-	question_squares;
-	question_rectangles;
-	question_rhombs;
-	question_trapezoids
+	action_parallelograms;
+	action_squares;
+	action_rectangles;
+	action_rhombs;
+	action_trapezoids
 	};;

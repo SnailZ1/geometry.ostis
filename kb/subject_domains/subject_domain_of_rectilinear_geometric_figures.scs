@@ -1,4 +1,4 @@
-sc_node_struct -> subject_domain_of_rectilinear_geometric_figures;;
+sc_node_structure -> subject_domain_of_rectilinear_geometric_figures;;
 
 subject_domain_of_rectilinear_geometric_figures
 => nrel_main_idtf:

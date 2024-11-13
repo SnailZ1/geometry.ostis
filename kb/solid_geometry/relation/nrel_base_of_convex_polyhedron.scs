@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_base_of_convex_polyhedron;;
+sc_node_non_role_relation -> nrel_base_of_convex_polyhedron;;
 
 nrel_base_of_convex_polyhedron => nrel_main_idtf: [основание выпуклого многогранника*] (*<-lang_ru;;*);;
 nrel_base_of_convex_polyhedron => nrel_main_idtf: [base of convex polyhedron*] (*<-lang_en;;*);;

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_spherical_layer;;
+sc_node_class -> concept_spherical_layer;;
 
 concept_spherical_layer => nrel_main_idtf:
 	[шаровый слой] (*<-lang_ru;;*);

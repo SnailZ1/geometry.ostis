@@ -3,7 +3,7 @@ ex7_s_triangles_area
 
 -> rrel_key_sc_element: concept_rectangular_triangle; nrel_area;
 
-<- rrel_key_sc_element: Question1;
+<- rrel_key_sc_element: action1;
 
 => nrel_main_idtf:
 	[Упражнение 7. Раздел. Площадь треугольника]

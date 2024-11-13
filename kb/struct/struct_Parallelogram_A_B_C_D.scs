@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Parallelogram_A_B_C_D;;
+sc_node_structure -> struct_Parallelogram_A_B_C_D;;
 
 struct_Parallelogram_A_B_C_D => nrel_main_idtf:
 	[Параллелограмм ABCD]

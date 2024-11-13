@@ -1,5 +1,5 @@
-sc_node_not_relation -> question_stereometry;;
-question_stereometry => nrel_main_idtf:
+sc_node_class -> action_stereometry;;
+action_stereometry => nrel_main_idtf:
 	[sc-задача стереометрии]
 	(* <- lang_ru;;	*);
 	[sc-task of stereometry]

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_Morley_triangle; concept_first_Morley_triangle; concept_second_Morley_triangle; consept_third_Morley_triangle;;
+sc_node_class -> concept_Morley_triangle; concept_first_Morley_triangle; concept_second_Morley_triangle; consept_third_Morley_triangle;;
 
 concept_Morley_triangle => nrel_main_idtf: [треугольник Морлея] (* <- lang_ru;; *);;
 concept_Morley_triangle => nrel_main_idtf: [Morley triangle] (* <- lang_en;; *);;
@@ -18,7 +18,7 @@ concept_first_Morley_triangle => nrel_main_idtf: [первый треуголь�
 concept_second_Morley_triangle => nrel_main_idtf: [второй треугольник Морлея] (* <- lang_ru;; *);;
 concept_third_Morley_triangle => nrel_main_idtf: [третий треугольник Морлея] (* <- lang_ru;; *);;
 
-nrel_trisector <- sc_node_norole_relation;;
+nrel_trisector <- sc_node_non_role_relation;;
 nrel_trisector => nrel_main_idtf: [триссектриса*] (* <- lang_ru;; *);;
 
 concept_Morley_triangle <- rrel_key_sc_element: 

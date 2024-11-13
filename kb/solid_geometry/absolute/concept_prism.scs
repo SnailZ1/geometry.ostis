@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_prism;;
+sc_node_class -> concept_prism;;
 
 concept_prism => nrel_main_idtf:
 	[призма] (*<-lang_ru;;*);

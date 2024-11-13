@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Isosceles_trapezoid_K_L_M_N;;
+sc_node_structure -> struct_Isosceles_trapezoid_K_L_M_N;;
 
 struct_Isosceles_trapezoid_K_L_M_N => nrel_main_idtf:
 	[Равнобедренная трапеция KLMN]

@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_centroid_of_triangle;;
+sc_node_non_role_relation -> nrel_centroid_of_triangle;;
 
 nrel_centroid_of_triangle => nrel_main_idtf:[центроид*](* <- lang_ru;; *);;
 nrel_centroid_of_triangle => nrel_main_idtf:[centroid*](*<-lang_en;;*);;

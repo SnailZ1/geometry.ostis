@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_center_line;;
+sc_node_non_role_relation -> nrel_center_line;;
 
 nrel_center_line => nrel_main_idtf:
 	[средняя линия*]

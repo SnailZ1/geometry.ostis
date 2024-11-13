@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_trapezoid;;
+sc_node_class -> concept_trapezoid;;
 
 concept_trapezoid => nrel_main_idtf:
 	[трапеция] (* <- lang_ru;; *);

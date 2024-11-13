@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_diagonal_of_polyhedron;;
+sc_node_non_role_relation -> nrel_diagonal_of_polyhedron;;
 
 nrel_diagonal_of_polyhedron => nrel_main_idtf:
 	[диагональ многогранника*]

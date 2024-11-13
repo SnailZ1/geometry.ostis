@@ -1,4 +1,4 @@
-question_finding_length_of_the_segment
+action_finding_length_of_the_segment
 => nrel_main_idtf:
 	[Задача на поиск длины отрезка AK]
 	(* <- lang_ru;; *);

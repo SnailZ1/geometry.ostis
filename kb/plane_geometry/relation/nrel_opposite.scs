@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_opposite;;
+sc_node_non_role_relation -> nrel_opposite;;
 
 nrel_opposite => nrel_main_idtf:
 	[противолежащий*]

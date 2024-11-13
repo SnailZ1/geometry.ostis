@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Rectilinear_triple_Of_Points_P_Q_R;;
+sc_node_structure -> struct_Rectilinear_triple_Of_Points_P_Q_R;;
 
 struct_Rectilinear_triple_Of_Points_P_Q_R => nrel_main_idtf:
 	[Прямолинейная тройка точек PQR]

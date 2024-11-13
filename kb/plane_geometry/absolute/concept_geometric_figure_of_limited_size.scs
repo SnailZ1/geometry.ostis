@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_geometric_figure_of_limited_size;;
+sc_node_class -> concept_geometric_figure_of_limited_size;;
 
 concept_geometric_figure_of_limited_size => nrel_main_idtf:
 	[геометрическая фигура ограниченного размера](*	<- lang_ru;; *);

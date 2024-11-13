@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_internal_sided_angles;;
+sc_node_non_role_relation -> nrel_internal_sided_angles;;
 
 nrel_internal_sided_angles => nrel_main_idtf:
 	[внутренние односторонние углы*]

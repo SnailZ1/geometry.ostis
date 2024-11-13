@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_concentric;;
+sc_node_non_role_relation -> nrel_concentric;;
 
 nrel_concentric => nrel_main_idtf: [концентрические*] (*<-lang_ru;;*);;
 nrel_concentric => nrel_main_idtf: [concentric*] (*<-lang_en;;*);;

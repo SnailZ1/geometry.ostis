@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_regular_hexagon;;
+sc_node_class -> concept_regular_hexagon;;
 
 concept_regular_hexagon => nrel_main_idtf:
 	[правильный шестиугольник]

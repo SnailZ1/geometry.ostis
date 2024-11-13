@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Rhomb_E_F_G_H;;
+sc_node_structure -> struct_Rhomb_E_F_G_H;;
 
 struct_Rhomb_E_F_G_H => nrel_main_idtf:
 	[Ромб EFGH]

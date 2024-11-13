@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_truncated_cone;;
+sc_node_class -> concept_truncated_cone;;
 
 concept_truncated_cone => nrel_main_idtf:
 	[усеченный конус] (*<-lang_ru;;*);

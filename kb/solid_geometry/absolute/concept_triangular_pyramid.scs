@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_triangular_pyramid;;
+sc_node_class -> concept_triangular_pyramid;;
 
 concept_triangular_pyramid => nrel_main_idtf: 
 	[треугольная пирамида] (*<-lang_ru;;*);

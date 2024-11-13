@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_conical_surface;;
+sc_node_class -> concept_conical_surface;;
 
 concept_conical_surface => nrel_main_idtf: 
 	[коническая поверхность] (*<-lang_ru;;*);

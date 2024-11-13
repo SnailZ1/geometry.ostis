@@ -1,9 +1,10 @@
 # common
-ims.ostis.kb
-!ims.ostis.kb/ui/menu
-!ims.ostis.kb/ims/doc_IMS/faq/section_faq.scs
-!ims.ostis.kb/ims/knowledge_base_IMS.scs
-kb
 
-ps/menu
-ps/system
+kb
+!kb/user-interface/kb/extended/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb
+!kb/user-interface/kb/extended/ui/menu
+!kb/user-interface/kb/extended/faq/section_faq.scs
+!kb/user-interface/kb/extended
+
+problem-solver/scp/calculator
+problem-solver/scp/search-module

@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_distance;;
+sc_node_non_role_relation -> nrel_distance;;
 
 nrel_distance => nrel_main_idtf:
 	[расстояние*]

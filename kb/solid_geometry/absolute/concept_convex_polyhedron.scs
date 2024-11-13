@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_convex_polyhedron;;
+sc_node_class -> concept_convex_polyhedron;;
 
 concept_convex_polyhedron => nrel_main_idtf: 
 	[выпуклый многогранник] (*<-lang_ru;;*);

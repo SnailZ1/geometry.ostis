@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_icosahedron;;
+sc_node_class -> concept_icosahedron;;
 
 concept_icosahedron => nrel_main_idtf:
 	[икосаэдр] (*<-lang_ru;;*);

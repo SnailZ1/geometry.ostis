@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_planar_figure;;
+sc_node_class -> concept_planar_figure;;
 
 concept_planar_figure => nrel_main_idtf:
 	[планарная геометрическая фигура](* <- lang_ru;; *);

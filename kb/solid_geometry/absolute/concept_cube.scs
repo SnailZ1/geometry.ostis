@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_cube;;
+sc_node_class -> concept_cube;;
 
 concept_cube => nrel_main_idtf:
 	[куб] (*<-lang_ru;;*);

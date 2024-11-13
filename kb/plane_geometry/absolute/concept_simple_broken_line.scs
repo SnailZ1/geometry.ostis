@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_simple_broken_line;;
+sc_node_class -> concept_simple_broken_line;;
 
 concept_simple_broken_line => nrel_main_idtf:
 	[простая ломаная](* <- lang_ru;; *);

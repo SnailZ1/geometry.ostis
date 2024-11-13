@@ -1,4 +1,4 @@
-sc_node_struct -> subject_domain_of_rounds_and_circles;;
+sc_node_structure -> subject_domain_of_rounds_and_circles;;
 
 subject_domain_of_rounds_and_circles
 => nrel_main_idtf:

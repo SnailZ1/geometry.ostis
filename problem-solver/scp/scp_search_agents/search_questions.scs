@@ -1,0 +1,90 @@
+sc_node_class -> action_finding_connections;;
+
+action_finding_connections => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску непосредственных связей между объектами]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_finding_axioms;;
+
+action_finding_axioms => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску аксиом для заданной онтологии]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_of_finding_constants;;
+
+action_of_finding_constants => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску понятий, на основе которых определяется заданное]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_of_finding_definitional_domain;;
+
+action_of_finding_definitional_domain => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску области определения отношения]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_of_finding_definitions;;
+
+action_of_finding_definitions => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску определения/пояснения для заданного понятия]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_of_finding_example;;
+
+action_of_finding_example => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску примеров для заданного понятия]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_finding_formal_statement;;
+
+action_finding_formal_statement => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску формальной записи утверждения для заданного знака утверждения]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_of_finding_illustrations;;
+
+action_of_finding_illustrations => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску иллюстраций]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_finding_keynodes;;
+
+action_finding_keynodes => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску ключевых узлов для заданной предметной области]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_of_finding_main_concept;;
+
+action_of_finding_main_concept => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску понятий, которые определяются на основе заданного]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_finding_proof;;
+
+action_finding_proof => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску доказательства для заданного утверждения]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_finding_relation;;
+
+action_finding_relation => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску отношений, заданных на понятии]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_of_finding_statements;;
+
+action_of_finding_statements => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску утверждений для заданного понятия]
+		(*<- lang_ru;;*);;
+
+sc_node_class -> action_finding_theorems;;
+
+action_finding_theorems => nrel_main_idtf:
+	[Вопросная конструкция, соответствующая поиску теорем для заданной онтологии]
+		(*<- lang_ru;;*);;
+
+
+
+
+
+
+	

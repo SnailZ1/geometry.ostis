@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Obtuse_triangle_L_D_K;;
+sc_node_structure -> struct_Obtuse_triangle_L_D_K;;
 
 struct_Obtuse_triangle_L_D_K => nrel_main_idtf:
 	[Тупоугольный треугольник LDK]

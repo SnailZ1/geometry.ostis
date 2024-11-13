@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_equilateral_cylinder;;
+sc_node_class -> concept_equilateral_cylinder;;
 
 concept_equilateral_cylinder => nrel_main_idtf: 
 	[равносторонний циллиндр] (*<-lang_ru;;*);

@@ -1,5 +1,5 @@
-sc_node_not_relation -> question_trapezoids;;
-question_trapezoids => nrel_main_idtf:
+sc_node_class -> action_trapezoids;;
+action_trapezoids => nrel_main_idtf:
 	[sc-задача на трапеции]
 	(* <- lang_ru;;	*);
 	[sc-task on trapezoids]

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_trihedral_angle;;
+sc_node_class -> concept_trihedral_angle;;
 
 concept_trihedral_angle => nrel_main_idtf: 
 	[трехгранный угол] (*<-lang_ru;;*);

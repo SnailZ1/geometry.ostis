@@ -1,5 +1,5 @@
-sc_node_not_relation -> question_combined;;
-question_combined => nrel_main_idtf:
+sc_node_class -> action_combined;;
+action_combined => nrel_main_idtf:
 	[комбинированная sc-задача]
 	(* <- lang_ru;;	*);
 	[combined sc-task]

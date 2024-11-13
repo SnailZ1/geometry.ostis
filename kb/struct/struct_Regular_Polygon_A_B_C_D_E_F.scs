@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Regular_Polygon_A_B_C_D_E_F;;
+sc_node_structure -> struct_Regular_Polygon_A_B_C_D_E_F;;
 
 struct_Regular_Polygon_A_B_C_D_E_F => nrel_main_idtf:
 	[Правильный многоугольник ABCDEF]

@@ -1,0 +1,19 @@
+ui_menu_agent_of_key_concepts_searching
+<- ui_user_command_class_atom; ui_user_command_class_view_kb; ui_one_argument_command_class;
+
+=> nrel_main_idtf: 
+[Найти ключевые узлы] (* <- lang_ru;; *);
+[Search key concepts] (* <- lang_en;; *);
+
+=> ui_nrel_command_template:
+	[*
+		action_find_key_concepts _-> _... 
+		(*
+			_-> ui_arg_1;;	
+			<-_ question;;
+		*);;
+	*];
+
+=> ui_nrel_command_lang_template: [Поиск ключевых узлов узла $ui_arg_1] (* <- lang_ru;; *);
+
+=> ui_nrel_command_lang_template: [Search key_concepts of $ui_arg_1] (* <- lang_en;; *);;

@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_consilience;;
+sc_node_non_role_relation -> nrel_consilience;;
 
 nrel_consilience => nrel_main_idtf:
 	[совпадение*] (* <- lang_ru;; *);

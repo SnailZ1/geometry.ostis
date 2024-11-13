@@ -5,7 +5,7 @@ ex6_s_triangles_area
 
 => nrel_next: ex7_s_triangles_area;
 
-<- rrel_key_sc_element: question_finding_area_of_right_triangle;
+<- rrel_key_sc_element: action_finding_area_of_right_triangle;
 
 => nrel_main_idtf:
 	[Упражнение 6. Раздел. Площадь треугольника]

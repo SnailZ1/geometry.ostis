@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_pentagon;;
+sc_node_class -> concept_pentagon;;
 
 concept_pentagon => nrel_main_idtf:
 	[пятиугольник] (* <- lang_ru;; *);

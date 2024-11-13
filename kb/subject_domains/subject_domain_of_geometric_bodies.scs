@@ -1,4 +1,4 @@
-sc_node_struct -> subject_domain_of_geometric_bodies;;
+sc_node_structure -> subject_domain_of_geometric_bodies;;
 
 subject_domain_of_geometric_bodies
 => nrel_main_idtf:

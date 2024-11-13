@@ -1,0 +1,8 @@
+sc_node_class -> action_of_finding_connection_between_entity_and_alternative_of_specification;;
+
+action_of_finding_connection_between_entity_and_alternative_of_specification => nrel_main_idtf:
+	[действие. найти связь между сущностью и альтернативой спецификации]
+		(*<- lang_ru;;*);;
+action_of_finding_connection_between_entity_and_alternative_of_specification => nrel_main_idtf:
+	[action. find connection between entity and alternative of specification]
+		(* <- lang_en;; *);;

@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_volume;;
+sc_node_non_role_relation -> nrel_volume;;
 
 nrel_volume => nrel_main_idtf: [объём*] (* <- lang_ru;; *);;
 nrel_volume => nrel_main_idtf: [volume*] (* <- lang_en;; *);;

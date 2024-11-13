@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_solid_of_revolution;;
+sc_node_class -> concept_solid_of_revolution;;
 
 concept_solid_of_revolution => nrel_main_idtf:
 	[тело вращения] (*<-lang_ru;;*);

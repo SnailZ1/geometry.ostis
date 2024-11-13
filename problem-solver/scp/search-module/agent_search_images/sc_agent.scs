@@ -1,0 +1,56 @@
+sc_agent_of_images_searching
+=> nrel_main_idtf:
+	[sc-агент поиска изображений] (* <- lang_ru;; *);
+	[sc-agent of images searching] (* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_condition_images => ..sc_agent_result_images);
+
+=> nrel_sc_agent_action_class:
+	action_find_images;
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_find_images
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_images_searching
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_proc_of_images_searching
+		};;
+
+	-> sc_agent_of_images_searching_scp
+		(* <- active_sc_agent;; *);;  
+	*);;
+
+..sc_agent_condition_images
+= [*
+	action_find_images _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent_result_images
+= [*
+	action_find_images _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;
+
+nrel_found_element
+-> sc_node_non_role_relation;
+=> nrel_main_idtf: [найденный элемент*] (*<-lang_ru;;*);;

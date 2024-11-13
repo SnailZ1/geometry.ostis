@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_ball;;
+sc_node_class -> concept_ball;;
 
 concept_ball => nrel_main_idtf: 
 	[шар] (*<-lang_ru;;*);

@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_adjacent_faces;;
+sc_node_non_role_relation -> nrel_adjacent_faces;;
 
 nrel_adjacent_faces => nrel_main_idtf: [смежные грани*] (* <- lang_ru;; *);;
 nrel_adjacent_faces => nrel_main_idtf: [adjacent_faces*] (* <- lang_en;; *);; 

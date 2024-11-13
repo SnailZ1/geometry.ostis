@@ -1,5 +1,5 @@
-sc_node_not_relation -> question_geometric_points;;
-question_geometric_points => nrel_main_idtf:
+sc_node_class -> action_geometric_points;;
+action_geometric_points => nrel_main_idtf:
 	[sc-задача на точки]
 	(* <- lang_ru;;	*);
 	[sc-task on geometric points]

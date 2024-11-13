@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_face_of_polyhedron;;
+sc_node_non_role_relation -> nrel_face_of_polyhedron;;
 
 nrel_face_of_polyhedron => nrel_main_idtf: [грань*](*<-lang_ru;;*);;
 nrel_face_of_polyhedron => nrel_main_idtf: [face of polyhedron*](* <- lang_en;; *);;

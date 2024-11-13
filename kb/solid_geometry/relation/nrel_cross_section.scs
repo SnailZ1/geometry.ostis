@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_cross_section;;
+sc_node_non_role_relation -> nrel_cross_section;;
 
 nrel_cross_section => nrel_main_idtf: [сечение*] (*<-lang_ru;;*);;
 nrel_cross_section => nrel_main_idtf: [cross section*] (*<-lang_en;;*);;

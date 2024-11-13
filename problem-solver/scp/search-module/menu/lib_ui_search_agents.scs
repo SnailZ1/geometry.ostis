@@ -1,0 +1,28 @@
+lib_ui_menu_na_search_agents =  [*
+ui_menu_na_search_agents <- ui_user_command_class_noatom;
+=> nrel_main_idtf: [Команды поиска фрагментов БЗ] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Commands to search KB fragments] (* <- lang_en;; *);
+<= nrel_ui_commands_decomposition:
+	{
+	ui_menu_agent_of_images_searching;
+	ui_menu_agent_of_axioms_searching;
+	ui_menu_agent_of_definitions_searching;
+	ui_menu_agent_of_key_concepts_searching;
+	ui_menu_agent_of_statements_searching;
+	ui_menu_agent_of_theorems_searching
+	};;
+
+*];;
+// needs to be included in ims-menu
+
+
+lib_ui_menu_na_calculate_agents =  [*
+ui_menu_na_calculate_agents <- ui_user_command_class_noatom;
+=> nrel_main_idtf: [Команды расчета математических выражений] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Commands to calculate math expressions] (* <- lang_en;; *);
+<= nrel_ui_commands_decomposition:
+	{
+    ui_menu_agent_of_calculation;
+    ui_menu_agent_of_addition
+	};;
+*];;

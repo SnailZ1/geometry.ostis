@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_straight_line;;
+sc_node_class -> concept_straight_line;;
 
 concept_straight_line => nrel_main_idtf:
 	[прямая] (* <- lang_ru;; *);

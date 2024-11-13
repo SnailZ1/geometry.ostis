@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_geometric_body;;
+sc_node_class -> concept_geometric_body;;
 
 concept_geometric_body => nrel_main_idtf:
 	[геометрическое тело](* <- lang_ru;; *);

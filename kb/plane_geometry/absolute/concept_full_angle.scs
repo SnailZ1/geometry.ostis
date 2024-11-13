@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_full_angle;;
+sc_node_class -> concept_full_angle;;
 
 concept_full_angle => nrel_main_idtf:
 	[полный угол](* <- lang_ru;; *);

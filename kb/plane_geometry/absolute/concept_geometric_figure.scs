@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_geometric_figure;;
+sc_node_class -> concept_geometric_figure;;
 
 concept_geometric_figure => nrel_main_idtf:
 	[геометрическая фигура](* <- lang_ru;; *);

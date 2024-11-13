@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Scalene_triangle_K_L_M;;
+sc_node_structure -> struct_Scalene_triangle_K_L_M;;
 
 struct_Scalene_triangle_K_L_M => nrel_main_idtf: [Разносторонний треугольник KLM] (* <- lang_ru;; *);;
 

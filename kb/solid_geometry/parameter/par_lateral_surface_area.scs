@@ -1,4 +1,4 @@
-par_lateral_surface_area <- sc_node_not_relation;;
+par_lateral_surface_area <- sc_node_class;;
 
 par_lateral_surface_area => nrel_main_idtf: [lateral_surface_area] (* <- lang_en;; *);;
 par_lateral_surface_area => nrel_main_idtf: [площадь боковой поверхности] (* <- lang_ru;; *);;

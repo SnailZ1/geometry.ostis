@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_interval;;
+sc_node_class -> concept_interval;;
 
 concept_interval => nrel_main_idtf:
 	[интервал](* <- lang_ru;; *);

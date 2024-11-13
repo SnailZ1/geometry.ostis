@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_regular_pyramid;;
+sc_node_class -> concept_regular_pyramid;;
 
 concept_regular_pyramid => nrel_main_idtf: [правильная пирамида] (*<-lang_ru;;*);;
 concept_regular_pyramid => nrel_main_idtf: [regular pyramid] (*<-lang_en;;*);;

@@ -1,6 +1,6 @@
-sc_node_norole_relation -> nrel_angle_measure;;
+sc_node_non_role_relation -> nrel_angle_measure;;
 
-nrel_angle_measure <- sc_node_norole_relation;;
+nrel_angle_measure <- sc_node_non_role_relation;;
 
 nrel_angle_measure => nrel_main_idtf:
 	[мера угла*]

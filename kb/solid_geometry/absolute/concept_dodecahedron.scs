@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_dodecahedron;;
+sc_node_class -> concept_dodecahedron;;
 
 concept_dodecahedron => nrel_main_idtf:
 	[додекаэдр] (*<-lang_ru;;*);

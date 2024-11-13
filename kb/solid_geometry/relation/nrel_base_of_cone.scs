@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_base_of_cone;;
+sc_node_non_role_relation -> nrel_base_of_cone;;
 
 nrel_base_of_cone => nrel_main_idtf: [основание конуса*] (*<-lang_ru;;*);;
 nrel_base_of_cone => nrel_main_idtf: [base of cone*] (*<-lang_en;;*);;

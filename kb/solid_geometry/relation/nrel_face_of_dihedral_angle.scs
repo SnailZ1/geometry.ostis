@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_face_of_dihedral_angle;;
+sc_node_non_role_relation -> nrel_face_of_dihedral_angle;;
 
 nrel_face_of_dihedral_angle => nrel_main_idtf:
 	[грань двугранного угла*]

@@ -1,0 +1,255 @@
+agent_proc_of_calculation
+=> nrel_main_idtf:
+	[агентная scp-программа вычисления выражений] (* <- lang_ru;; *);
+	[agent scp-program of expression calculation] (* <- lang_en;; *);
+<- agent_scp_program;
+<- scp_program;
+-> rrel_key_sc_element: _process1;;
+
+agent_proc_of_calculation = [*
+_process1 
+<-_ scp_process;
+//params
+_-> rrel_1:: rrel_in:: _event;
+_-> rrel_2:: rrel_in:: _input_arc;
+
+//operators
+<=_ nrel_decomposition_of_action:: _... (*
+
+		_->  rrel_1:: _..operator_print
+			(*
+			<-_ printNl;;
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: [Agent of calculation is started];;
+
+			_=> nrel_goto:: _..operator1;;
+			*);;
+
+		_->  _..operator1
+			(*
+			<-_ searchElStr3;;
+
+			_-> rrel_1:: rrel_assign:: rrel_scp_var:: _temp;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _input_arc;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _quest;;
+
+			_=> nrel_then:: _..operator2;;
+			_=> nrel_else:: _..operator_return;;
+			*);;
+
+		_-> _..operator2
+			(*
+			<-_ searchElStr3;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: action_calculate;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
+
+			_=> nrel_then:: _..operator3;;
+			_=> nrel_else:: _..operator_return;;
+			*);;
+
+		_-> _..operator3
+			(*
+			<-_ searchElStr3;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _param;;
+
+			_=> nrel_then:: _..operator_is_arithmetic_expression;;
+			_=> nrel_else:: _..operator_return;;
+			*);;
+
+		_-> _..operator_is_arithmetic_expression
+			(*
+			<-_ searchElStr3;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: arithmetic_expression;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _param;;
+
+			_=> nrel_then:: _..operator_gen_answer;;
+			_=> nrel_else:: _..operator_return;;
+			*);;
+
+		_-> _..operator_gen_answer
+			(*
+			<-_ genElStr5;;
+
+			_-> rrel_1:: rrel_assign:: rrel_scp_var:: rrel_node:: rrel_const:: _answer;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _arc1;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_const:: rrel_link:: [calc_answer];;
+			_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
+			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_main_idtf;;
+
+			_=> nrel_goto:: _..operator_gen_set_of_elements;;
+			*);;
+		
+		_-> _..operator_gen_set_of_elements
+			(*
+			<-_ genElStr5;;
+
+			_-> rrel_1:: rrel_assign:: rrel_scp_var:: rrel_node:: rrel_const:: _elements;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _arc1;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_const:: rrel_link:: [calc_elements];;
+			_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
+			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_main_idtf;;
+
+			_=> nrel_goto:: _..operator_gen_copy_of_operations;;
+			*);;
+
+		_-> _..operator_gen_copy_of_operations
+			(*
+			<-_ genEl;;
+
+			_-> rrel_1:: rrel_assign:: rrel_scp_var:: rrel_node:: rrel_const:: _operations;;
+
+			_=> nrel_goto:: _..operator_search;;
+			*);;
+
+		_-> _..operator_search
+			(*
+			<-_ searchSetStr3;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _param;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _element;;
+
+			_-> rrel_set_3:: rrel_fixed:: rrel_scp_var:: _elements;;
+
+			_=> nrel_then:: _..operator_cycle_search_operations;;
+			_=> nrel_else:: _..operator_answer;;
+			*);;
+
+		_-> _..operator_cycle_search_operations
+			(*
+			<-_ searchElStr3;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _elements;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _temp_arc;;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var::  _element;;
+
+			_=> nrel_then:: _..operator_del;;
+			_=> nrel_else:: _..operator_add_in_answer;;
+			*);;
+
+				_-> _..operator_del
+					(*
+					<-_ eraseEl;;
+					
+					_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _temp_arc;;
+
+					_=> nrel_goto:: _..operator_is_operation;;
+					*);;
+
+				_-> _..operator_is_operation
+					(*
+					<-_ searchElStr3;;
+
+					_-> rrel_1:: rrel_fixed:: rrel_scp_const:: arithmetic_operation;;
+					_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+					_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _element;;
+
+					_=> nrel_then:: _..operator_search_operation_arc;;
+					_=> nrel_else:: _..operator_cycle_search_operations;;
+					*);;
+				
+				_-> _..operator_search_operation_arc
+					(*
+					<-_ searchElStr5;;
+
+					_-> rrel_1:: rrel_assign:: rrel_scp_var:: _begin;;
+					_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _temp_arc1;;
+					_-> rrel_3:: rrel_assign:: rrel_scp_var:: _end;;
+					_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _temp_arc2;;
+					_-> rrel_5:: rrel_fixed:: rrel_scp_var:: _element;;
+
+					_=> nrel_then:: _..operator_add_in_operations_arc1;;
+					_=> nrel_else:: _..operator_cycle_search_operations;;
+					*);;
+
+				 _-> _..operator_add_in_operations_arc1
+				 	(*
+					<-_ genElStr3;;
+
+					_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _operations;;
+					_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+					_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _temp_arc1;;
+
+					_=> nrel_goto:: _..operator_add_in_operations_arc2;;
+					*);;
+
+				_-> _..operator_add_in_operations_arc2
+					(*
+					<-_ genElStr3;;
+
+					_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _operations;;
+					_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+					_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _temp_arc2;;
+
+					_=> nrel_goto:: _..operator_cycle_search_operations;;
+					*);;
+
+		_-> _..operator_add_in_answer
+			(*
+			<-_ genElStr3;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: rrel_node:: rrel_const:: _answer;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var::  _operations;;
+
+			_=> nrel_goto:: _..operator_call_cycle_search_operations;;
+			*);;
+
+		_-> _..operator_call_cycle_search_operations
+			(*
+			<-_ call;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_search_operations;;
+			_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _..params 
+					(* 
+					_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _operations;;
+					*);;
+			_-> rrel_3:: rrel_assign:: rrel_scp_var:: _descr;;
+						
+			_=> nrel_goto:: _..operator_wait;;
+			*);;
+			
+		_-> _..operator_wait
+			(*
+			<-_ waitReturn;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _descr;;
+							
+			_=> nrel_goto:: _..operator_end;;
+			*);;
+
+		_-> _..operator_end
+			(*
+			<-_ printNl;;
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: [Agent of calculation is finished];;
+
+			_=> nrel_goto:: _..operator_answer;;
+			*);;
+
+		_-> _..operator_answer
+			(*
+			<-_ genElStr5;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _arc1;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _answer;;
+			_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
+			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_answer;;
+
+			_=> nrel_goto:: _..operator_return;;
+			*);;
+
+		_-> _..operator_return
+			(*
+			<-_ return;;
+			*);;
+
+*);;
+
+*];;

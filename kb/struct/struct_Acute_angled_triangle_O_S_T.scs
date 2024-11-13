@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Acute_angled_triangle_O_S_T;;
+sc_node_structure -> struct_Acute_angled_triangle_O_S_T;;
 
 struct_Acute_angled_triangle_O_S_T => nrel_main_idtf:
 	[Остроугольный треугольник OST]

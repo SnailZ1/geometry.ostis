@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_axis_of_symmetry;;
+sc_node_non_role_relation -> nrel_axis_of_symmetry;;
 
 nrel_axis_of_symmetry => nrel_main_idtf:
 	[ось симметрии*]

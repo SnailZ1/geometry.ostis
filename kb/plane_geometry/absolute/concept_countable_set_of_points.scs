@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_countable_set_of_points;;
+sc_node_class -> concept_countable_set_of_points;;
 
 concept_countable_set_of_points => nrel_main_idtf:
 	[счетное множество точек] (* <- lang_ru;; *);

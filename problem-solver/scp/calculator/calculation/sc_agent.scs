@@ -1,0 +1,71 @@
+sc_agent_of_calculation
+=> nrel_main_idtf:
+	[sc-агент вычисления выражений] (* <- lang_ru;; *);
+	[sc-agent of expression calculation] (* <- lang_en;; *);
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => question_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent4_condition => ..sc_agent4_result);
+
+=> nrel_sc_agent_action_class:
+	action_calculate;
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	question_initiated;
+	question;
+	action_calculate;
+	action_calculate_operation;
+
+	nrel_sum_of_numbers;
+	nrel_multiplication_of_numbers;
+	nrel_pow_numbers;
+
+	number_pi;
+	number_zero;
+	number_one;
+
+	number;
+	natural_number;
+	integer;
+
+	arithmetic_operation;
+	arithmetic_expression
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_calculation
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_proc_of_calculation;
+		proc_call_operation_agent;
+		proc_search_operations
+		};;
+
+	-> sc_agent_of_calculation_scp
+		(* <- active_sc_agent;; *);;  
+	*);;
+
+..sc_agent4_condition
+= [*
+	action_calculate _-> .._question;;
+	question_initiated _-> .._question;;
+	question _-> .._question;;
+	.._question _-> .._parameter;;
+*];;
+
+..sc_agent4_result
+= [*
+	action_calculate _-> .._question;;
+	question_finished _-> .._question;;
+	question _-> .._question;;
+	.._question _=> nrel_answer:: .._answer;;
+	.._question _-> .._parameter;;
+*];;
+
+

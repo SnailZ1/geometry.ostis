@@ -5,13 +5,11 @@ statement -> stat_reverse_converse_triangle_side_opposite_angle_congruence;;
 
 stat_triangle_side_opposite_angle_congruence => nrel_main_idtf:
 	[Утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);
-	[Stat.(triangle; side*; congruence*; interior angle*)](* <lang_en;;*);;
-
+	[Stat.(triangle; side*; congruence*; interior angle*)](* <-lang_en;;*);;
 
 stat_converse_triangle_side_opposite_angle_congruence => nrel_main_idtf:
 	[Обр.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);
 	[Converse stat.(triangle; side*; congruence*; interior angle*)](* <-lang_en;;*);;
-
 
 stat_reverse_triangle_side_opposite_angle_congruence => nrel_main_idtf:
 	[Прот.утв.(треугольник; сторона*; конгруэнтность*; внутренний угол*)] (* <- lang_ru;; *);

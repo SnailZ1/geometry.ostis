@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_geometric_figure_with_all_boundary_points;;
+sc_node_class -> concept_geometric_figure_with_all_boundary_points;;
 
 concept_geometric_figure_with_all_boundary_points => nrel_main_idtf:
 	[геометрическая фигура, в состав которой входят все граничные точки](* <- lang_ru;; *);

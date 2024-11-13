@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_larger_base_of_truncated_pyramid;;
+sc_node_non_role_relation -> nrel_larger_base_of_truncated_pyramid;;
 
 nrel_larger_base_of_truncated_pyramid => nrel_main_idtf: [нижнее основание усеченной пирамиды*] (*<-lang_ru;;*);;
 nrel_larger_base_of_truncated_pyramid => nrel_main_idtf: [larger base of truncated pyramid*] (*<-lang_en;;*);;

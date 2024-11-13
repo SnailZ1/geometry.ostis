@@ -1,5 +1,5 @@
-sc_node_not_relation -> question_quadrilaterals;;
-question_quadrilaterals => nrel_main_idtf:
+sc_node_class -> action_quadrilaterals;;
+action_quadrilaterals => nrel_main_idtf:
 	[sc-задача на четырехугольники]
 	(* <- lang_ru;;	*);
 	[sc-task on quadrilaterals]

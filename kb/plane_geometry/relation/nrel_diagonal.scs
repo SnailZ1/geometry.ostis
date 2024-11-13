@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_diagonal;;
+sc_node_non_role_relation -> nrel_diagonal;;
 
 nrel_diagonal => nrel_main_idtf:
 	[диагональ*]

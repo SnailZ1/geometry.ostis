@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_curved_line;;
+sc_node_class -> concept_curved_line;;
 
 concept_curved_line => nrel_main_idtf:
 	[кривая](* <- lang_ru;;	*);

@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Equilateral_triangle_X_Y_Z;;
+sc_node_structure -> struct_Equilateral_triangle_X_Y_Z;;
 
 struct_Equilateral_triangle_X_Y_Z => nrel_main_idtf:
 	[Равносторонний треугольник XYZ]

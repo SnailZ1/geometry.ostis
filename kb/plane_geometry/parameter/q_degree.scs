@@ -1,4 +1,4 @@
-q_degree <- sc_node_not_relation;;
+q_degree <- sc_node_class;;
 
 q_degree => nrel_main_idtf:
 	[градус]

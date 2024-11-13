@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_zone_of_sphere;;
+sc_node_class -> concept_zone_of_sphere;;
 
 concept_zone_of_sphere => nrel_main_idtf:
 	[сферический пояс] (*<-lang_ru;;*);

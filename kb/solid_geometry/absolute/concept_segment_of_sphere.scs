@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_segment_of_sphere;;
+sc_node_class -> concept_segment_of_sphere;;
 
 concept_segment_of_sphere => nrel_main_idtf:
 	[сферический сегмент] (*<-lang_ru;;*);

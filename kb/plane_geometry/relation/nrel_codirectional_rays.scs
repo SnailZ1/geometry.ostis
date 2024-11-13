@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_codirectional_rays;;
+sc_node_non_role_relation -> nrel_codirectional_rays;;
 
 nrel_codirectional_rays => nrel_main_idtf:
 	[сонаправленные лучи*]

@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Rectangular_Trapezoid_P_Q_R_S;;
+sc_node_structure -> struct_Rectangular_Trapezoid_P_Q_R_S;;
 
 struct_Rectangular_Trapezoid_P_Q_R_S => nrel_main_idtf:
 	[Прямоугольная трапеция PQRS]

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_segment;;
+sc_node_class -> concept_segment;;
 
 concept_segment => nrel_main_idtf:
 	[отрезок](* <- lang_ru;; *);

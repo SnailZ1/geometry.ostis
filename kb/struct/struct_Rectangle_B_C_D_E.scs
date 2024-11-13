@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Rectangle_B_C_D_E;;
+sc_node_structure -> struct_Rectangle_B_C_D_E;;
 
 struct_Rectangle_B_C_D_E => nrel_main_idtf:
 	[Прямоугольник BCDE]

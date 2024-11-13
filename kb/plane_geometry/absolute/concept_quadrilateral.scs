@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_quadrilateral;;
+sc_node_class -> concept_quadrilateral;;
 
 concept_quadrilateral => nrel_main_idtf:
 	[четырехугольник] (* <- lang_ru;; *);

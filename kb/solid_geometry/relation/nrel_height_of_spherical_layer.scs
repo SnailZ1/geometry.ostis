@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_height_of_spherical_layer;;
+sc_node_non_role_relation -> nrel_height_of_spherical_layer;;
 
 nrel_height_of_spherical_layer => nrel_main_idtf: [высота шарового слоя*] (*<-lang_ru;;*);;
 nrel_height_of_spherical_layer => nrel_main_idtf: [height of spherical layer*] (*<-lang_en;;*);;

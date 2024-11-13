@@ -1,4 +1,4 @@
-sc_node_struct -> subject_domain_of_parallelograms;;
+sc_node_structure -> subject_domain_of_parallelograms;;
 
 subject_domain_of_parallelograms
 => nrel_main_idtf:

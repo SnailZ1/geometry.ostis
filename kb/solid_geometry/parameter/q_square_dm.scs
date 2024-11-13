@@ -1,4 +1,4 @@
-q_square_dm <- sc_node_not_relation;;
+q_square_dm <- sc_node_class;;
 
 q_square_dm => nrel_main_idtf:
 	[квадратный дециметр]

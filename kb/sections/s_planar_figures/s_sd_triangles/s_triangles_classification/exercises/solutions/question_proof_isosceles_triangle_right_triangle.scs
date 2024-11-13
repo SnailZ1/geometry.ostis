@@ -1,2 +1,2 @@
-question_proof_isosceles_triangle_right_triangle => nrel_main_idtf:[Задача на доказательство принадлежности треугольника к классам прямоугольного и равнобедренного треугольника](* <- lang_ru;; *);;
-question_proof_isosceles_triangle_right_triangle => nrel_main_idtf:[Task on proof that triangle is right and isosceles](* <- lang_en;; *);;
+action_proof_isosceles_triangle_right_triangle => nrel_main_idtf:[Задача на доказательство принадлежности треугольника к классам прямоугольного и равнобедренного треугольника](* <- lang_ru;; *);;
+action_proof_isosceles_triangle_right_triangle => nrel_main_idtf:[Task on proof that triangle is right and isosceles](* <- lang_en;; *);;

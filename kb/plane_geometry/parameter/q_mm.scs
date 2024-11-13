@@ -1,4 +1,4 @@
-q_mm <- sc_node_not_relation;;
+q_mm <- sc_node_class;;
 
 q_mm => nrel_main_idtf:
 	[миллиметр]

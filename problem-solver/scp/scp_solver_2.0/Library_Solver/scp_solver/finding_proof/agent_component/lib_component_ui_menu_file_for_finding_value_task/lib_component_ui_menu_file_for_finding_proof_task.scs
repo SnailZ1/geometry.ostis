@@ -1,0 +1,41 @@
+lib_component_ui_menu_file_for_finding_proof_task
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команда пользовательского интерфейса для проверки истинности утверждения]
+	(* <- lang_ru;; *);
+	[Library component. User interface command for сhecking the truth of statement]
+	(* <- lang_en;; *);
+
+<- platform_independent_reusable_component_OSTIS;
+<- atomic_reusable_component_OSTIS;
+<- reusable_knowledge_base_sc_model_component;
+
+<- rrel_key_sc_element:
+	... 
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Ui_Finding_Proof.html"
+				(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+lib_component_ui_menu_file_for_finding_proof_task = [*
+	ui_menu_file_for_finding_proof_task <- ui_user_command_class_atom;
+
+=> nrel_main_idtf: [Проверка истинности утверждения] (* <- lang_ru;; *);
+=> nrel_main_idtf: [Checking the truth of statement] (* <- lang_en;; *);;
+	ui_menu_file_for_finding_proof_task => ui_nrel_command_template:
+		[*
+			action_finding_proof_task _-> ._action_finding_proof_task_instance
+				(*
+				_-> ui_arg_1;;
+				*);;
+			._action_finding_proof_task_instance <-_ action;;
+		*];;
+
+	ui_menu_file_for_finding_proof_task => ui_nrel_command_lang_template: [Проверка истинности утверждения: $ui_arg_1] (* <- lang_ru;; *);;
+	ui_menu_file_for_finding_proof_task => ui_nrel_command_lang_template: [Checking the truth of statement: $ui_arg_1] (* <- lang_en;; *);;
+*];; 

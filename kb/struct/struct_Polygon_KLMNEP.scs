@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Polygon_K_L_M_N_E_P;;
+sc_node_structure -> struct_Polygon_K_L_M_N_E_P;;
 
 struct_Polygon_K_L_M_N_E_P => nrel_main_idtf:
 	[Многоугольник KLMNEP]

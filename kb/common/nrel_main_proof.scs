@@ -1,5 +1,5 @@
 nrel_main_proof
-<- sc_node_norole_relation;
+<- sc_node_non_role_relation;
 => nrel_main_idtf: 
 	[основное доказательство*] 
 	(* <- lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node_struct -> subject_domain_of_lines;;
+sc_node_structure -> subject_domain_of_lines;;
 
 subject_domain_of_lines
 => nrel_main_idtf:

@@ -1,4 +1,4 @@
-sc_node_struct -> subject_domain_of_polygons;;
+sc_node_structure -> subject_domain_of_polygons;;
 
 subject_domain_of_polygons
 => nrel_main_idtf:

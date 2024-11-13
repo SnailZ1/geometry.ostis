@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Plane_P;;
+sc_node_structure -> struct_Plane_P;;
 
 struct_Plane_P => nrel_main_idtf:
 	[Плоскость P]

@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_base_of_segment_of_ball;;
+sc_node_non_role_relation -> nrel_base_of_segment_of_ball;;
 
 nrel_base_of_segment_of_ball => nrel_main_idtf: [основание шарового сегмента*] (* <- lang_ru;; *);;
 nrel_base_of_segment_of_ball => nrel_idtf: [base of segment of ball*] (* <- lang_en;; *);;

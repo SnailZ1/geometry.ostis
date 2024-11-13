@@ -1,4 +1,4 @@
-par_distance <- sc_node_not_relation;;
+par_distance <- sc_node_class;;
 
 par_distance <- parameter;;
 

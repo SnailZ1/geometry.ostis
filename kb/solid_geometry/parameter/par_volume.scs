@@ -1,4 +1,4 @@
-sc_node_not_relation -> par_volume;;
+sc_node_class -> par_volume;;
 
 parameter -> par_volume;;
 

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_irregular_polygon;;
+sc_node_class -> concept_irregular_polygon;;
 
 concept_irregular_polygon => nrel_main_idtf:
 	[неправильный многоугольник](* <- lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Irregular_polygon_K_A_B_C_D_E;;
+sc_node_structure -> struct_Irregular_polygon_K_A_B_C_D_E;;
 
 struct_Irregular_polygon_K_A_B_C_D_E => nrel_main_idtf:
 	[Неправильный многоугольник KABCDE]

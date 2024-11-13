@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_isosceles_triangle;;
+sc_node_class -> concept_isosceles_triangle;;
 
 concept_isosceles_triangle => nrel_main_idtf:
 	[равнобедренный треугольник](* <- lang_ru;; *);

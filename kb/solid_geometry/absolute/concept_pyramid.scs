@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_pyramid;;
+sc_node_class -> concept_pyramid;;
 
 concept_pyramid => nrel_main_idtf:
 	[пирамида] (*<-lang_ru;;*);

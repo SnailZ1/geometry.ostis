@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_axis_of_truncated_cone;;
+sc_node_non_role_relation -> nrel_axis_of_truncated_cone;;
 
 nrel_axis_of_truncated_cone => nrel_main_idtf: [ось усеченного конуса*] (*<-lang_ru;;*);;
 nrel_axis_of_truncated_cone => nrel_main_idtf: [axis of truncated cone*] (*<-lang_en;;*);;

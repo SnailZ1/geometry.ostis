@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_surface;;
+sc_node_class -> concept_surface;;
 
 concept_surface => nrel_main_idtf:
 	[поверхность](* <- lang_ru;; *);

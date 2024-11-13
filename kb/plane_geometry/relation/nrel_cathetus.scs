@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_cathetus;;
+sc_node_non_role_relation -> nrel_cathetus;;
 
 nrel_cathetus => nrel_main_idtf:
 	[катет*]

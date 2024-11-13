@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_Apollonius_circle;;
+sc_node_class -> concept_Apollonius_circle;;
 
 concept_Apollonius_circle => nrel_main_idtf: [окружность Аполлония]
 (*<-lang_ru;;*);;

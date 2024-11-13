@@ -1,8 +1,0 @@
-sc_node_not_relation -> action_of_forming_logical_ontology_for_the_given_domain;;
-
-action_of_forming_logical_ontology_for_the_given_domain => nrel_main_idtf:
-	[действие. сформировать логическую онтологию заданной предметной области]
-		(*<- lang_ru;;*);;
-action_of_forming_logical_ontology_for_the_given_domain => nrel_main_idtf:
-	[action. forming logical ontology for given subject domain]
-		(* <- lang_en;; *);;

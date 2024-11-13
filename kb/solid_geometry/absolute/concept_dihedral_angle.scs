@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_dihedral_angle;;
+sc_node_class -> concept_dihedral_angle;;
 
 concept_dihedral_angle => nrel_main_idtf: 
 	[двугранный угол] (*<-lang_ru;;*);

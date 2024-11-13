@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_right_prism;;
+sc_node_class -> concept_right_prism;;
 
 concept_right_prism => nrel_main_idtf:
     [прямая призма] (*<-lang_ru;;*);

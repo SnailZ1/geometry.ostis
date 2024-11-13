@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_inclined_parallelepiped;;
+sc_node_class -> concept_inclined_parallelepiped;;
 
 concept_inclined_parallelepiped => nrel_main_idtf: 
 	[наклонный параллелепипед] (*<-lang_ru;;*);

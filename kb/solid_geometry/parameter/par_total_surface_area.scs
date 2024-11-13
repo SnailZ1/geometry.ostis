@@ -1,4 +1,4 @@
-sc_node_not_relation -> par_total_surface_area;;
+sc_node_class -> par_total_surface_area;;
 
 par_total_surface_area => nrel_system_identifier:
 	[par_total_surface_area];;

@@ -1,0 +1,52 @@
+sc_agent_of_finding_all_statements_associated_with_given_entity
+=> nrel_main_idtf:
+	[sc-агент вывода всех ассоциированных с заданной сущностью утверждений] 
+		(* <- lang_ru;; *);
+
+	[sc-agent of output all statements associated with a given domain] 
+		(* <- lang_en;; *);
+
+<- abstract_sc_agent;
+
+=> nrel_primary_initiation_condition: 
+	(sc_event_add_output_arc => action_initiated);
+
+=> nrel_initiation_condition_and_result: 
+	(..sc_agent_of_finding_all_statements_associated_with_given_entity => ..sc_agent_of_finding_all_statements_associated_with_given_entity_result);
+
+<= nrel_sc_agent_key_sc_elements: 
+	{
+	action_initiated;
+	action;
+	action_to_find_all_statements_associated_with_given_entity
+	};
+
+=> nrel_inclusion: 
+	.platform_independent_realization_of_sc_agent_of_finding_all_statements_associated_with_given_entity
+	(*
+	<- platform_independent_abstract_sc_agent;;
+	<= nrel_sc_agent_program: 
+		{
+		agent_of_finding_all_statements_associated_with_given_entity;
+		proc_of_find_associated_statements
+		};;
+	-> sc_agent_of_finding_all_statements_associated_with_given_entity_scp   
+		(* <- active_sc_agent;; *);;
+	*);;
+
+..sc_agent_of_finding_all_statements_associated_with_given_entity_condition
+= [*
+	action_to_find_all_statements_associated_with_given_entity _-> .._action;;
+	action_initiated _-> .._action;;
+	action _-> .._action;;
+	.._action _-> .._param1;;
+*];;
+
+..sc_agent_of_finding_all_statements_associated_with_given_entity_result
+= [*
+	action_to_find_all_statements_associated_with_given_entity _-> .._action;;
+	action_finished _-> .._action;;
+	action _-> .._action;;
+	.._action _=> nrel_answer:: .._answer;;
+	.._action _-> .._param1;;
+*];;

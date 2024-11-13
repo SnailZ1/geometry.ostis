@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_non_planar_surface;;
+sc_node_class -> concept_non_planar_surface;;
 
 concept_non_planar_surface => nrel_main_idtf:
 	[непланарная поверхность](* <- lang_ru;; *);

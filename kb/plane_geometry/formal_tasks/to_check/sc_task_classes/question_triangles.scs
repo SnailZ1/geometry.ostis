@@ -1,5 +1,5 @@
-sc_node_not_relation -> question_triangles;;
-question_triangles => nrel_main_idtf:
+sc_node_class -> action_triangles;;
+action_triangles => nrel_main_idtf:
 	[sc-задача на треугольники]
 	(* <- lang_ru;;	*);
 	[sc-task on triangles]

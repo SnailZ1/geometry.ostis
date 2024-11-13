@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_cone;;
+sc_node_class -> concept_cone;;
 
 concept_cone => nrel_main_idtf:
 	[конус] (* <- lang_ru;;	*);

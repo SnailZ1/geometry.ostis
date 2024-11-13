@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_projection;;
+sc_node_non_role_relation -> nrel_projection;;
 
 nrel_projection => nrel_main_idtf: [проекция*] (*<-lang_ru;;*);;
 nrel_projection => nrel_main_idtf: [projection*] (*<-lang_en;;*);;

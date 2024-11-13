@@ -1,0 +1,33 @@
+lib_component_agent_for_generating_opposite_theorem
+=> nrel_main_idtf:
+	[Компонент библиотеки. sc-агент генерации противоположной теоремы]
+	(* <- lang_ru;; *);
+	[Library component. sc-agent of for generating opposite theorem]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components; 
+<- library_of_atomic_reusable_components;
+
+-> rrel_key_sc_element: 
+	.platform_independent_realization_of_sc_agent_for_generating_opposite_theorem;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+	<- explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://htmls/Agent_for_generating_opposite_theorem.html"
+				(* <- lang_ru;; *);; 
+		*);;
+	*);;
+
+action_for_generating_opposite_theorem
+<- sc_node_class;
+=> nrel_main_idtf:
+	[действие. сгенерировать противоположную теорему]
+ 	(* <- lang_ru;; *);
+ 	[action. generating opposite theorem]
+ 	(* <- lang_en;; *);;

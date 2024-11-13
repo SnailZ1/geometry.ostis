@@ -1,4 +1,4 @@
-sc_node_norole_relation -> nrel_lateral_surface_of_geometric_body;;
+sc_node_non_role_relation -> nrel_lateral_surface_of_geometric_body;;
 
 nrel_lateral_surface_of_geometric_body => nrel_main_idtf: [боковая поверхность геометрического тела*] (*<-lang_ru;;*);;
 nrel_lateral_surface_of_geometric_body => nrel_main_idtf: [lateral surface of geometric body*] (*<-lang_en;;*);;

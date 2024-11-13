@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_non_rectlinear_three_tuple_of_points;;
+sc_node_class -> concept_non_rectlinear_three_tuple_of_points;;
 
 concept_non_rectlinear_three_tuple_of_points => nrel_main_idtf:
 	[непрямолинейная тройка точек] (* <- lang_ru;;	*);

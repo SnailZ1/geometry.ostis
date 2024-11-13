@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Circle_O_R;;
+sc_node_structure -> struct_Circle_O_R;;
 
 struct_Circle_O_R =>  nrel_main_idtf:
 	[Окружность (O; R)]

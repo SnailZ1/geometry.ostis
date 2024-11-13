@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_complex_polyline;;
+sc_node_class -> concept_complex_polyline;;
 
 concept_complex_polyline => nrel_main_idtf:
 	[сложная ломаная] (* <- lang_ru;; *);

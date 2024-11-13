@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_oblique_prism;;
+sc_node_class -> concept_oblique_prism;;
 
 concept_oblique_prism => nrel_main_idtf:
 	[наклонная призма] (*<-lang_ru;;*);

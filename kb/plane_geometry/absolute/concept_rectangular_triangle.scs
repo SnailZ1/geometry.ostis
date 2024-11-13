@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_rectangular_triangle;;
+sc_node_class -> concept_rectangular_triangle;;
 
 concept_rectangular_triangle => nrel_main_idtf:
 	[прямоугольный треугольник] (* <- lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_opened_half_plane;;
+sc_node_class -> concept_opened_half_plane;;
 
 concept_opened_half_plane => nrel_main_idtf:
 	[открытая полуплоскость](* <- lang_ru;;	*);

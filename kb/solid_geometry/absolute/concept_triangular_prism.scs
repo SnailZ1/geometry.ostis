@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_triangular_prism;;
+sc_node_class -> concept_triangular_prism;;
 
 concept_triangular_prism => nrel_main_idtf: 
 	[треугольная призма] (*<-lang_ru;;*);

@@ -52,7 +52,7 @@ documentation_Ostis_Geometry <= nrel_section_decomposition:
 	};;
 	
 documentation_Euclidean_geometry = [*
-	sc_node_struct -> subject_domain_of_Euclidean_geometry;;
+	sc_node_structure -> subject_domain_of_Euclidean_geometry;;
 
 	subject_domain_of_Euclidean_geometry
 	=> nrel_main_idtf:

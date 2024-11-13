@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_segment_of_ball;;
+sc_node_class -> concept_segment_of_ball;;
 
 concept_segment_of_ball => nrel_main_idtf:
 	[шаровой сегмент] (*<-lang_ru;;*);

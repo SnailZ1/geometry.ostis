@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_linear_polygon;;
+sc_node_class -> concept_linear_polygon;;
 
 concept_linear_polygon => nrel_main_idtf:
 	[линейный многоугольник](* <- lang_ru;; *);

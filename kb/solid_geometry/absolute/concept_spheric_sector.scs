@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_spheric_sector;;
+sc_node_class -> concept_spheric_sector;;
 
 concept_spheric_sector => nrel_main_idtf:
 	[шаровой сектор] (*<-lang_ru;;*);

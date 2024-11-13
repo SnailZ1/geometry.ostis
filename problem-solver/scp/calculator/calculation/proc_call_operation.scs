@@ -1,0 +1,129 @@
+proc_call_operation_agent
+=> nrel_main_idtf:
+	[scp-программа вызова агента вычисления операции] (* <- lang_ru;; *);
+	[scp-program to call agent of operation calculation] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: _process1;;
+
+proc_call_operation_agent = [*
+_process1 
+<-_ scp_process;
+//params
+_-> rrel_1:: rrel_in:: _input_arc1;
+
+//operators
+<=_ nrel_decomposition_of_action:: _... (*
+  
+    _-> rrel_1:: _..operator_print
+    (*
+        <-_ printNl;;
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: [Procedure of call operation-agent is started];;
+
+        _=> nrel_goto:: _..operator_create_action;;
+    *);;
+
+    _->  _..operator_create_action
+    (*
+    	<-_ genElStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: action_calculate_operation;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+        _-> rrel_3:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_node:: _quest;;
+
+        _=> nrel_goto:: _..operator_gen_name;;
+    *);;
+
+    _-> _..operator_gen_name
+    (*
+        <-_ genElStr5;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var::  _quest;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _arc1;;
+        _-> rrel_3:: rrel_fixed:: rrel_scp_const:: rrel_link:: [action_node];;
+        _-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
+        _-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_main_idtf;;
+
+        _=> nrel_goto:: _..operator_create_question;;
+    *);;
+
+    _-> _..operator_create_question
+    (*
+    	<-_ genElStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: question;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+        _-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
+
+        _=> nrel_goto:: _..operator_create_param;;
+    *);;
+
+    _-> _..operator_create_param
+    (*
+    	<-_ genElStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _quest;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+        _-> rrel_3:: rrel_fixed:: rrel_scp_const:: _input_arc1;;
+
+        _=> nrel_goto:: _..operator_create_question_initiated;;
+    *);;
+
+    _-> _..operator_create_question_initiated
+    (*
+    	<-_ genElStr3;; // инициировали
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: question_initiated;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+        _-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
+
+        //_=> nrel_goto:: _..operator_end;;
+        _=> nrel_goto:: _..operator_sys_wait;; 
+    *);;
+
+    _-> _..operator_end
+    (*
+    <-_ printNl;;
+    _-> rrel_1:: rrel_fixed:: rrel_scp_const:: [Proc of call operation is finished];;
+
+    _=> nrel_goto:: _..operator_return;;
+    *);;
+
+    _-> _..operator_sys_wait
+    (*
+    	<-_ sys_wait;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: sc_event_add_output_arc;; // по окончанию работы агента должна быть создана question_finished -> quest
+        _-> rrel_2:: rrel_fixed:: rrel_scp_const:: secret_question;; // Узел действия вызываемого агента
+
+        _=> nrel_goto:: _..operator_sys_wait2;;
+    *);;
+
+    _-> _..operator_sys_wait2
+    (*
+    	<-_ sys_wait;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: sc_event_add_output_arc;; // по окончанию работы агента должна быть создана question_finished -> quest
+        _-> rrel_2:: rrel_fixed:: rrel_scp_const:: secret_question;; // Узел действия вызываемого агента
+
+        _=> nrel_goto:: _..operator_sys_wait3;;
+    *);;
+
+    _-> _..operator_sys_wait3
+    (*
+    	<-_ sys_wait;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: sc_event_add_output_arc;; // по окончанию работы агента должна быть создана question_finished -> quest
+        _-> rrel_2:: rrel_fixed:: rrel_scp_const:: secret_question;; // Узел действия вызываемого агента
+
+        _=> nrel_goto:: _..operator_end;;
+    *);;
+
+    _-> _..operator_return
+    (*
+        <-_ return;;
+    *);;
+
+
+*);;
+
+*];;

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_Simson_line;;
+sc_node_class -> concept_Simson_line;;
 
 concept_Simson_line => nrel_main_idtf: [прямая Симсона] (*<-lang_ru;;*);;
 concept_Simson_line => nrel_main_idtf: [Simson_line] (*<-lang_en;;*);;

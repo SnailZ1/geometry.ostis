@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
+sc_node_structure -> struct_Non_Convex_Polygon_O_P_R_S_Q_T;;
 
 struct_Non_Convex_Polygon_O_P_R_S_Q_T => nrel_main_idtf:
 	[Невыпуклый многоугольник OPRSQT]

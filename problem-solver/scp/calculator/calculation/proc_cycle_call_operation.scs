@@ -1,0 +1,248 @@
+proc_search_operations
+=> nrel_main_idtf:
+	[scp-программа перебора операций] (* <- lang_ru;; *);
+	[scp-program to search operations] (* <- lang_en;; *);
+<- scp_program;
+-> rrel_key_sc_element: _process1;;
+
+proc_search_operations = [*
+_process1 
+<-_ scp_process;
+//params
+_-> rrel_1:: rrel_in:: _operations;
+
+//operators
+<=_ nrel_decomposition_of_action:: _... (*
+
+    _-> rrel_1:: _..operator_print
+    (*
+        <-_ printNl;;
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: [Procedure of operation search is started];;
+
+        _=> nrel_goto::  _..create_copy_elements_main;;
+    *);;
+  
+    _-> _..create_copy_elements_main
+    (*
+    	<-_ genEl;;
+
+        _-> rrel_1:: rrel_assign:: rrel_scp_var:: rrel_node:: rrel_const:: _copy_elements_main;;
+
+        _=> nrel_goto:: _..operator_copy_elements;;
+    *);;
+
+    _-> _..operator_copy_elements
+    (*
+    	<-_ genEl;;
+
+        _-> rrel_1:: rrel_assign:: rrel_scp_var:: rrel_node:: rrel_const:: _copy_elements;;
+
+        _=> nrel_goto:: _..operator_full_copy_elements_main;;
+    *);;
+
+    _-> _..operator_full_copy_elements_main
+    (*
+    	<-_ searchSetStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_const:: _operations;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+        _-> rrel_3:: rrel_assign:: rrel_scp_var:: _element;;
+
+        _-> rrel_set_3:: rrel_fixed:: rrel_scp_var:: _copy_elements_main;;
+
+        _=> nrel_goto:: _..operator_full_copy_elements;;
+    *);;
+
+    _-> _..operator_full_copy_elements
+    (*
+    	<-_ searchSetStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _copy_elements_main;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+        _-> rrel_3:: rrel_assign:: rrel_scp_var:: _element;;
+
+        _-> rrel_set_3:: rrel_fixed:: rrel_scp_var:: _copy_elements;;
+
+        _=> nrel_then:: _..operator_gen_prev_main;;
+        _=> nrel_else:: _..operator_return;;
+    *);;
+
+    _-> _..operator_gen_prev_main
+    (*
+    	<-_ genEl;;
+
+        _-> rrel_1:: rrel_assign:: rrel_scp_var:: rrel_node:: rrel_const:: _copy_elements_prev_main;;
+
+        _=> nrel_goto:: _..operator_full_copy_elements_prev;;
+    *);;
+
+    _-> _..operator_full_copy_elements_prev
+    (*
+    	<-_ searchSetStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _copy_elements_main;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+        _-> rrel_3:: rrel_assign:: rrel_scp_var:: _element;;
+
+        _-> rrel_set_3:: rrel_fixed:: rrel_scp_var:: _copy_elements_prev_main;;
+
+        _=> nrel_then:: _..operator_cycle_operation;;
+        _=> nrel_else:: _..operator_return;;
+    *);;
+///////////////
+    _-> _..operator_check_cycle // prev and main
+    (*
+         <-_ searchElStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _copy_elements_prev_main;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _to_del_arc1;;
+        _-> rrel_3:: rrel_assign:: rrel_scp_var:: _node;;
+
+        _=> nrel_then:: _..operator_check_del;;
+        _=> nrel_else:: _..operator_return;;
+    *);;
+
+    _-> _..operator_check_del
+    (*
+        <-_ eraseEl;;
+        
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _to_del_arc1;;
+
+        _=> nrel_goto:: _..operator_compare;;
+    *);;
+
+    _-> _..operator_compare
+    (*
+        <-_ searchElStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _copy_elements_main;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+        _-> rrel_3:: rrel_fixed:: rrel_scp_var:: _node;;
+
+        _=> nrel_then:: _..operator_check_cycle;;
+        _=> nrel_else:: _..operator_check_del_prev;;
+    *);;
+
+    _-> _..operator_check_del_prev
+    (*
+        <-_ eraseEl;;
+        
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _copy_elements_prev_main;;
+
+        _=> nrel_goto:: _..operator_gen_prev_main;;
+    *);;
+
+/////////////////////
+
+    _-> _..operator_cycle_operation
+    (*
+    	<-_ searchElStr3;;
+
+        _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _copy_elements;;
+        _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _temp_arc2;;
+        _-> rrel_3:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _temp_arc1;;
+
+        _=> nrel_then:: _..operator_call_operation;;
+        _=> nrel_else:: _..operator_check;;// _..operator_full_copy_elements_not_first;;
+    *);;
+
+				_-> _..operator_call_operation
+					(*
+					<-_ call;;
+
+					_-> rrel_1:: rrel_fixed:: rrel_scp_const:: proc_call_operation_agent;;
+					_-> rrel_2:: rrel_fixed:: rrel_scp_const:: _..params 
+							(* 
+							_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _temp_arc1;;
+							*);;
+					_-> rrel_3:: rrel_assign:: rrel_scp_var:: _descr;;
+								
+					_=> nrel_goto:: _..operator_wait;;
+					*);;
+					
+				_-> _..operator_wait
+					(*
+					<-_ waitReturn;;
+
+					_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _descr;;
+									
+					_=> nrel_goto:: _..operator_check_value;;
+                    
+					*);;
+
+                _-> _..operator_help
+					(*
+                    <-_ printNl;;
+                    _-> rrel_1:: rrel_fixed:: rrel_scp_const:: [Help];;
+
+                    _=> nrel_goto::  _..create_copy_elements_main;;
+									
+					_=> nrel_then:: _..operator_cycle_operation;;
+					*);;
+
+                _-> _..operator_check_value
+                (*
+                    <-_ searchElStr3;;
+
+                    _-> rrel_1:: rrel_assign:: rrel_scp_var:: _begin;;
+                    _-> rrel_2:: rrel_fixed:: rrel_scp_var:: _temp_arc1;;
+                    _-> rrel_3:: rrel_assign:: rrel_scp_var:: _end;;
+
+                    _=> nrel_then:: _..operator_del;;
+                    _=> nrel_else:: _..operator_help;;
+                *);;
+
+                _-> _..operator_check_value2
+                (*
+                    <-_ searchElStr5;;
+
+                    _-> rrel_1:: rrel_fixed:: rrel_scp_sassign:: _begin;;
+                    _-> rrel_2:: rrel_assign:: rrel_const:: rrel_common:: rrel_arc:: rrel_scp_var:: _arc1;;
+                    _-> rrel_3:: rrel_assign:: rrel_scp_var:: _value;;
+                    _-> rrel_4:: rrel_assign:: rrel_pos_const_perm:: rrel_scp_var:: _arc2;;
+                    _-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_value;;
+
+                    _=> nrel_then:: _..operator_search_to_del_full;;
+                    _=> nrel_else:: _..operator_cycle_operation;;
+
+                *);;
+
+                _-> _..operator_del
+                (*
+                    <-_ eraseEl;;
+                    
+                    _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _temp_arc2;;
+
+                    _=> nrel_goto:: _..operator_check_value2;;
+                *);;
+
+                _-> _..operator_search_to_del_full
+                (*
+                    <-_ searchElStr3;;
+
+                    _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _copy_elements_main;;
+                    _-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc_to_del_main;;
+                    _-> rrel_3:: rrel_fixed:: rrel_scp_var:: _temp_arc1;;
+
+                    _=> nrel_then:: _..operator_del_full;;
+                    _=> nrel_else:: _..operator_cycle_operation;;
+                    
+                *);;
+
+                _-> _..operator_del_full
+                (*
+                    <-_ eraseEl;;
+                    
+                    _-> rrel_1:: rrel_fixed:: rrel_scp_var:: _arc_to_del_main;;
+
+                    _=> nrel_goto:: _..operator_cycle_operation;;
+                *);;             
+
+    _-> _..operator_return
+    (*
+        <-_ return;;
+    *);;
+
+*);;
+
+*];;

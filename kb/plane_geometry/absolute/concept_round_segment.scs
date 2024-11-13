@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_round_segment;;
+sc_node_class -> concept_round_segment;;
 
 concept_round_segment => nrel_main_idtf:
 	[круговой сегмент] (* <- lang_ru;; *);

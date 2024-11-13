@@ -1,4 +1,4 @@
-sc_node_struct -> struct_Rectangular_triangle_D_F_G;;
+sc_node_structure -> struct_Rectangular_triangle_D_F_G;;
 
 struct_Rectangular_triangle_D_F_G => nrel_main_idtf:
 	[Прямоугольный треугольник DFG]

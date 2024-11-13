@@ -1,4 +1,4 @@
-q_cube_meter <- sc_node_not_relation;;
+q_cube_meter <- sc_node_class;;
 
 q_cube_meter => nrel_main_idtf:
 	[кубический метр]

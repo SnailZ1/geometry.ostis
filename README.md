@@ -26,9 +26,15 @@ cd scripts
  ## Running
 ```sh
 # Launch knowledge processing machine
-./scripts/run_sc_server.sh
+./scripts/run_cxx_ps.sh
 # *in another terminal*
 # Launch semantic web interface at localhost:8000
 ./scripts/run_sc_web.sh
 ```
 Then open localhost:8000
+
+ ## Build
+```sh
+./scripts/build_platform.sh
+./scripts/build_sc_web.sh
+```

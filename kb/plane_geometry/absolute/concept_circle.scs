@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_circle;;
+sc_node_class -> concept_circle;;
 
 concept_circle => nrel_main_idtf:
 	[окружность](* <- lang_ru;; *);

@@ -1,5 +1,5 @@
-sc_node_not_relation -> question_rectangles;;
-question_rectangles => nrel_main_idtf:
+sc_node_class -> action_rectangles;;
+action_rectangles => nrel_main_idtf:
 	[sc-задача на прямоугольники]
 	(* <- lang_ru;;	*);
 	[sc-task on rectangles]

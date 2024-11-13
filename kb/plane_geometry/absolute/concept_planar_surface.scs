@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_planar_surface;;
+sc_node_class -> concept_planar_surface;;
 
 concept_planar_surface => nrel_main_idtf:
 	[планарная поверхность] (* <- lang_ru;; *);;
