@@ -10,5 +10,5 @@ nrel_value
 	(* <- lang_ru;; *);;
     
 
-secret_question
+secret_action
 <- sc_node_class;;

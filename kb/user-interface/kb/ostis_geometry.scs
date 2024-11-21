@@ -1,4 +1,4 @@
-knowledge_base_of_Euclidean_geometry <= nrel_section_decomposition:
+knowledge_base_of_Euclidean_geometry => nrel_section_decomposition:
 	{
 	documentation_Euclidean_geometry;
 	documentation_Ostis_Geometry;
@@ -7,8 +7,6 @@ knowledge_base_of_Euclidean_geometry <= nrel_section_decomposition:
 	documentation_project_Ostis_Geometry
 	};;
 
-knowledge_base_of_Euclidean_geometry <- ui_start_sc_element;;
-	
 rrel_key_sc_element -> (logical_hierarchy_of_statements_of_subject_domain_of_triangles -> stat_isosceles_triangle_congruence_angle)
 (*
 	<- rrel_key_sc_element;;
@@ -21,7 +19,8 @@ rrel_key_sc_element -> (logical_hierarchy_of_statements_of_subject_domain_of_tri
 
 knowledge_base_of_Euclidean_geometry 
 	=> nrel_main_idtf: [Knowledge base of IRS of geometry] (*<- lang_en;; *);
-	=> nrel_main_idtf: [База знаний ИСС по геометрии] (*<- lang_ru;; *);;
+	=> nrel_main_idtf: [База знаний ИСС по геометрии] (*<- lang_ru;; *);
+	<- ui_start_sc_element;;
 documentation_Euclidean_geometry
 	=> nrel_main_idtf: [Documentation. Euclidian geometry] (*<- lang_en;; *);
 	=> nrel_main_idtf: [Документация. Геометрия Евклида] (*<- lang_ru;; *);;
@@ -226,3 +225,7 @@ section_project_of_Ostis_Geometry_dialog <= nrel_sc_text_translation:
 	-> "file://geom_dialog.pdf"
 		(* <- lang_ru;; *);;
 	*);;
+
+nrel_section_decomposition
+	=> nrel_main_idtf: [section decomposition*] (*<- lang_en;; *);
+	=> nrel_main_idtf: [декомпозиция разделов*] (*<- lang_ru;; *);;

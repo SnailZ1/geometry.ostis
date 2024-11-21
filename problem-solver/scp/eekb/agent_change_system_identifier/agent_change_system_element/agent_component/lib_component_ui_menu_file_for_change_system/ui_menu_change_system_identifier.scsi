@@ -10,12 +10,12 @@ ui_menu_change_system_identifier => nrel_main_idtf:
 
 ui_menu_change_system_identifier => ui_nrel_command_template:
 	[*
-	action_of_changing_system_identifier _-> ._question_change_system_identifier_instance
+	action_of_changing_system_identifier _-> ._action_change_system_identifier_instance
 		(*
 		_-> rrel_1:: ui_arg_1;;
 		_-> rrel_2:: ui_arg_2;;
 		*);;
-	._question_change_system_identifier_instance _<- question;;
+	._action_change_system_identifier_instance _<- action;;
 	*];;
 
 

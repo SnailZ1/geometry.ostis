@@ -1,10 +1,10 @@
-//ui_menu_na_task_solution <- ui_user_command_class_noatom;;
-
+lib_ui_menu_na_task_solution =  [*
 ui_menu_na_task_solution => nrel_main_idtf: [Команды для решения задач] (* <- lang_ru;; *);;
 ui_menu_na_task_solution => nrel_main_idtf: [Commands for task solver] (* <- lang_en;; *);;
-
+ui_menu_na_task_solution  <- ui_user_command_class_noatom;;
 ui_menu_na_task_solution <= nrel_ui_commands_decomposition:
 {
-	ui_menu_file_for_finding_value_task;
-	ui_menu_file_for_finding_proof_task
+	ui_menu_na_search_agents;
+	ui_menu_na_calculate_agents
 };;
+*];;

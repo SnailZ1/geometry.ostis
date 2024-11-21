@@ -9,7 +9,7 @@ sc_agent_of_finding_all_statements_associated_with_given_entity
 <- abstract_sc_agent;
 
 => nrel_primary_initiation_condition: 
-	(sc_event_add_output_arc => action_initiated);
+	(sc_event_after_generate_outgoing_arc => action_initiated);
 
 => nrel_initiation_condition_and_result: 
 	(..sc_agent_of_finding_all_statements_associated_with_given_entity => ..sc_agent_of_finding_all_statements_associated_with_given_entity_result);
@@ -47,6 +47,6 @@ sc_agent_of_finding_all_statements_associated_with_given_entity
 	action_to_find_all_statements_associated_with_given_entity _-> .._action;;
 	action_finished _-> .._action;;
 	action _-> .._action;;
-	.._action _=> nrel_answer:: .._answer;;
+	.._action _=> nrel_result:: .._answer;;
 	.._action _-> .._param1;;
 *];;

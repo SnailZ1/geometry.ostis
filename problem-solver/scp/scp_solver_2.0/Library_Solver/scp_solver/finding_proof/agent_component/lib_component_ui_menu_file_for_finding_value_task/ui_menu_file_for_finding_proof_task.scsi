@@ -4,11 +4,11 @@ ui_menu_file_for_finding_proof_task <- ui_user_command_class_atom;
 => nrel_main_idtf: [Checking the truth of statement] (* <- lang_en;; *);;
 ui_menu_file_for_finding_proof_task => ui_nrel_command_template:
 	[*
-		question_finding_proof_task _-> ._question_finding_proof_task_instance
+		action_finding_proof_task _-> ._action_finding_proof_task_instance
 			(*
 			_-> ui_arg_1;;
 			*);;
-		._question_finding_proof_task_instance _<- question;;
+		._action_finding_proof_task_instance _<- action;;
 	*];;
 
 ui_menu_file_for_finding_proof_task => ui_nrel_command_lang_template: [Проверка истинности утверждения: $ui_arg_1] (* <- lang_ru;; *);;

@@ -10,7 +10,7 @@ ui_menu_agent_of_axioms_searching
 		action_find_axioms _-> _... 
 		(*
 			_-> ui_arg_1;;	
-			<-_ question;;
+			<-_ action;;
 		*);;
 	*];
 

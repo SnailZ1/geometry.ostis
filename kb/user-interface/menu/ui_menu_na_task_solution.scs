@@ -1,8 +1,0 @@
-ui_menu_na_task_solution => nrel_main_idtf: [Команды для решения задач] (* <- lang_ru;; *);;
-ui_menu_na_task_solution => nrel_main_idtf: [Commands for task solver] (* <- lang_en;; *);;
-
-ui_menu_na_task_solution <= nrel_ui_commands_decomposition:
-{
-	ui_menu_na_search_agents;
-	ui_menu_na_calculate_agents
-};;

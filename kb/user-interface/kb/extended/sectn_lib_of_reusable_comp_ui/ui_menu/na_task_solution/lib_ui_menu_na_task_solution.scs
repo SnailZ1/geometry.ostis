@@ -1,0 +1,15 @@
+lib_ui_menu_na_task_solution
+=> nrel_main_idtf:
+	[Компонент библиотеки. Команды решения задач]
+	(* <- lang_ru;; *);
+	[Library component. Commands to solvw tasks]
+	(* <- lang_en;; *);
+
+<- library_of_platform_independent_reusable_components;
+<- library_of_non_atomic_reusable_components;
+
+<= nrel_library_component_decomposition:
+	{		
+	lib_ui_menu_na_ui_search_agents;
+	lib_ui_menu_na_calculate_agents
+	};;

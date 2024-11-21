@@ -210,7 +210,7 @@ _-> rrel_2:: rrel_in:: _input_arc;
 			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _arc1;;
 			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _answer;;
 			_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
-			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_answer;;
+			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_result;;
 
 			_=> nrel_goto:: _..operator_return;;
 			*);;

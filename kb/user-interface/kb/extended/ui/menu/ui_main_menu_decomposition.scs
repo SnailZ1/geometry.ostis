@@ -1,3 +1,4 @@
 ui_main_menu_decomposition
 	-> ui_menu_na_view_kb;
+	-> ui_menu_na_task_solution;
 	-> ui_menu_na_keynodes;;

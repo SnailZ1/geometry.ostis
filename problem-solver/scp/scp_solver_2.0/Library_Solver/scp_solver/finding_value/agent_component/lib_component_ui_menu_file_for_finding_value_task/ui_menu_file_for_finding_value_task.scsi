@@ -5,11 +5,11 @@ ui_menu_file_for_finding_value_task <- ui_user_command_class_atom;
 
 ui_menu_file_for_finding_value_task => ui_nrel_command_template:
 	[*
-		question_finding_value_task _-> ._question_finding_value_task_instance
+		action_finding_value_task _-> ._action_finding_value_task_instance
 			(*
 			_-> ui_arg_1;;
 			*);;
-		._question_finding_value_task_instance _<- question;;
+		._action_finding_value_task_instance _<- action;;
 	*];;
 
 ui_menu_file_for_finding_value_task => ui_nrel_command_lang_template: [Поиск значения: $ui_arg_1] (* <- lang_ru;; *);;

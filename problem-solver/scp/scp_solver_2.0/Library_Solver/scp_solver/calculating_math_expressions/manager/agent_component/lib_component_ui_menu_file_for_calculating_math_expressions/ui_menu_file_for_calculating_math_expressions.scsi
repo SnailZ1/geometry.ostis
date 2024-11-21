@@ -9,11 +9,11 @@ ui_menu_file_for_calculating_math_expressions => nrel_main_idtf:
 
 ui_menu_file_for_calculating_math_expressions => ui_nrel_command_template:
 	[*
-		question_of_calculating_math_expressions _-> ._question_of_calculating_math_expressions_instance
+		action_of_calculating_math_expressions _-> ._action_of_calculating_math_expressions_instance
 			(*
 				_-> ui_arg_1;;			
 			*);;
-		._question_of_calculating_math_expressions_instance _<- question;;
+		._action_of_calculating_math_expressions_instance _<- action;;
 	*];;
 
 ui_menu_file_for_calculating_math_expressions => ui_nrel_command_lang_template: 

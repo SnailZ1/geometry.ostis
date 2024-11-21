@@ -1,10 +1,14 @@
 # common
 
+ostis-web-platform/kb/ims.ostis.kb/ims/ostis_tech/semantic_network_represent
+ostis-web-platform/kb/ims.ostis.kb/ims/ostis_tech/unificated_models
+ostis-web-platform/kb/ims.ostis.kb/ims/ostis_tech/semantic_networks_processing
+
 kb
-!kb/user-interface/kb/extended/sectn_lib_of_reusable_comp_ui/ui_menu/na_view_kb
-!kb/user-interface/kb/extended/ui/menu
-!kb/user-interface/kb/extended/faq/section_faq.scs
-!kb/user-interface/kb/extended
+
+!ostis-web-platform/kb/ims.ostis.kb
+
+ostis-web-platform/scp-machine/kb
 
 problem-solver/scp/calculator
 problem-solver/scp/search-module

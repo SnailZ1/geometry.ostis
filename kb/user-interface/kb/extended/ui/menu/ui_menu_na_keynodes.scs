@@ -6,5 +6,7 @@ ui_menu_na_keynodes
 
 <= nrel_ui_commands_decomposition:
 	{
-		ui_menu_na_keynodes_for_beginners
+		ui_menu_na_keynodes_for_beginners;
+		subject_domain_of_Euclidean_geometry;
+		knowledge_base_of_Euclidean_geometry
 	};;

@@ -14,7 +14,7 @@ ui_menu_faile_for_generate_opposite_theorem => ui_nrel_command_template:
 			(*
 			_-> ui_arg_1;;				
 			*);;
-		._action_for_generating_opposite_theorem_instance _<- question;;
+		._action_for_generating_opposite_theorem_instance _<- action;;
 	*];;
 
 ui_menu_faile_for_generate_opposite_theorem => ui_nrel_command_lang_template: 

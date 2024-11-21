@@ -94,7 +94,7 @@ sc_text_of_agent_of_finding_all_statements_associated_with_given_entity = [*
 				-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
 				-> rrel_3: rrel_fixed: rrel_scp_var:  _answer_of_finding_of_all_statements;;
 				-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
-				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;
 
 				=> nrel_goto: .agent_of_finding_all_statements_associated_with_given_entity_return;;
 				*);;	

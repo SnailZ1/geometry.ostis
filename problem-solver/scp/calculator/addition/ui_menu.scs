@@ -10,7 +10,7 @@ ui_menu_agent_of_addition
 		action_calculate_operation _-> _... 
 		(*
 			_-> ui_arg_1;;	
-			<-_ question;;
+			<-_ action;;
 		*);;
 	*];
 

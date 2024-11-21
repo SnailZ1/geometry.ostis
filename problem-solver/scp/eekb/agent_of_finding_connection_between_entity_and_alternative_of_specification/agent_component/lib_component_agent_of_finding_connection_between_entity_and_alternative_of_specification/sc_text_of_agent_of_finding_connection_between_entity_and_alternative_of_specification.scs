@@ -698,7 +698,7 @@ sc_text_of_agent_of_finding_connection_between_entity_and_alternative_of_specifi
 				-> rrel_2: rrel_assign: rrel_scp_var: rrel_const: rrel_common: _arc1;;
 				-> rrel_3: rrel_fixed: rrel_scp_var:  _answer_of_finding_connection_between_entity_and_alternative_of_specification;;
 				-> rrel_4: rrel_assign: rrel_scp_var: rrel_const: rrel_pos_const_perm: _arc2;;
-				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: nrel_result;;
 
 				=> nrel_goto: .agent_of_finding_connection_between_entity_and_alternative_of_specification_return;;
 				*);;

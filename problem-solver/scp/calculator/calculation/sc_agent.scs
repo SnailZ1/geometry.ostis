@@ -5,7 +5,7 @@ sc_agent_of_calculation
 <- abstract_sc_agent;
 
 => nrel_primary_initiation_condition: 
-	(sc_event_add_output_arc => question_initiated);
+	(sc_event_after_generate_outgoing_arc => action_initiated);
 
 => nrel_initiation_condition_and_result: 
 	(..sc_agent4_condition => ..sc_agent4_result);
@@ -15,8 +15,8 @@ sc_agent_of_calculation
 
 <= nrel_sc_agent_key_sc_elements: 
 	{
-	question_initiated;
-	question;
+	action_initiated;
+	action;
 	action_calculate;
 	action_calculate_operation;
 
@@ -53,19 +53,21 @@ sc_agent_of_calculation
 
 ..sc_agent4_condition
 = [*
-	action_calculate _-> .._question;;
-	question_initiated _-> .._question;;
-	question _-> .._question;;
-	.._question _-> .._parameter;;
+	action_calculate _-> .._action;;
+	action_initiated _-> .._action;;
+	action _-> .._action;;
+	.._action _-> .._parameter;;
 *];;
 
 ..sc_agent4_result
 = [*
-	action_calculate _-> .._question;;
-	question_finished _-> .._question;;
-	question _-> .._question;;
-	.._question _=> nrel_answer:: .._answer;;
-	.._question _-> .._parameter;;
+	action_calculate _-> .._action;;
+	action_finished _-> .._action;;
+	action _-> .._action;;
+	.._action _=> nrel_result:: .._answer;;
+	.._action _-> .._parameter;;
 *];;
 
-
+action_calculate
+<- sc_node_class;
+<= nrel_inclusion: information_action;;

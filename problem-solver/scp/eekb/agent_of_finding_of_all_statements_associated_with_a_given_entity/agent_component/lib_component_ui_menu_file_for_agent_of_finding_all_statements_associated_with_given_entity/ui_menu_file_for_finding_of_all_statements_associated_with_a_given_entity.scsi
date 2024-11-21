@@ -9,7 +9,7 @@ action_to_find_all_statements_associated_with_given_entity _-> ._action_to_find_
 			(*
 			_-> ui_arg_1;;	
 			*);;
-		._action_to_find_all_statements_associated_with_given_entity_instance _<- question;;
+		._action_to_find_all_statements_associated_with_given_entity_instance _<- action;;
 	*];;
 
 ui_menu_file_for_finding_of_all_statements_associated_with_a_given_entity => ui_nrel_command_lang_template: [Найти все утверждения, ассоциированные с $ui_arg_1] (* <- lang_ru;; *);;
