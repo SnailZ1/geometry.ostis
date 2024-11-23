@@ -1,12 +1,12 @@
-agent_proc_of_axioms_searching
+agent_proc_of_tasks_searching
 => nrel_main_idtf:
-	[агентная scp-программа поиска аксиом] (* <- lang_ru;; *);
-	[agent scp-program of axiom searching] (* <- lang_en;; *);
+	[агентная scp-программа поиска задач] (* <- lang_ru;; *);
+	[agent scp-program of tasks searching] (* <- lang_en;; *);
 <- agent_scp_program;
 <- scp_program;
 -> rrel_key_sc_element: _process1;;
 
-agent_proc_of_axioms_searching = [*
+agent_proc_of_tasks_searching = [*
 _process1 
 <-_ scp_process;
 //params
@@ -19,12 +19,12 @@ _-> rrel_2:: rrel_in:: _input_arc;
 		_-> rrel_1:: _..operator_print
 			(*
 			<-_ printNl;;
-			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: [Agent of finding  axioms is started];;
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: [Agent of finding tasks is started];;
 
 			_=> nrel_goto:: _..operator1;;
 			*);;
 
-		_-> _..operator1
+		_->  _..operator1
 			(*
 			<-_ searchElStr3;;
 
@@ -39,7 +39,7 @@ _-> rrel_2:: rrel_in:: _input_arc;
 			(*
 			<-_ searchElStr3;;
 
-			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: action_find_axioms;;
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: action_find_tasks;;
 			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
 			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _quest;;
 
@@ -118,7 +118,7 @@ _-> rrel_2:: rrel_in:: _input_arc;
 			(*
 			<-_ searchElStr3;;
 
-			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: statement;;
+			_-> rrel_1:: rrel_assign:: rrel_scp_var:: _set_tasks;;
 			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
 			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _element;;
 
@@ -131,10 +131,10 @@ _-> rrel_2:: rrel_in:: _input_arc;
 			<-_ searchElStr5;;
 
 			_-> rrel_1:: rrel_assign:: rrel_scp_var:: _section;;
-			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
-			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _element;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: _arc1;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _set_tasks;;
 			_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
-			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: rrel_axiom;;
+			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_exercises;;
 
 			_=> nrel_then:: _..operator7C;;
 			_=> nrel_else:: _..operator5;;
@@ -152,7 +152,7 @@ _-> rrel_2:: rrel_in:: _input_arc;
 
 			_=> nrel_then:: _..operator7D;;
 			_=> nrel_else:: _..operator5;;
-			*);;	
+			*);;
 
 		_-> _..operator7D
 			(*
@@ -167,7 +167,7 @@ _-> rrel_2:: rrel_in:: _input_arc;
 			_=> nrel_then:: _..operator7;;
 			_=> nrel_else:: _..operator5;;
 			*);;
-
+			
 		_-> _..operator7
 			(*
 			<-_ genElStr3;;
@@ -175,30 +175,6 @@ _-> rrel_2:: rrel_in:: _input_arc;
 			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
 			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
 			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _file;;
-
-			_=> nrel_goto:: _..operator8;;
-			*);;
-
-		_-> _..operator8
-			(*
-			<-_ genElStr5;;
-
-			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _param;;
-			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _arc;;
-			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _file;;
-			_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
-			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_found_element;;
-
-			_=> nrel_goto:: _..operator8_2;;
-			*);;
-
-		_-> _..operator8_2
-			(*
-			<-_ genElStr3;;
-
-			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _answer;;
-			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
-			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _arc;;
 
 			_=> nrel_goto:: _..operator5;;
 			*);;

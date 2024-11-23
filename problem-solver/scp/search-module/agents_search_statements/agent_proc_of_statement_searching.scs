@@ -111,8 +111,20 @@ _-> rrel_2:: rrel_in:: _input_arc;
 			
 			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _temp_arc;;
 
-			_=> nrel_goto:: _..operator7A;;
+			_=> nrel_goto:: _..operator7;;
 		*);;
+
+		_-> _..operator7
+			(*
+			<-_ searchElStr3;;
+
+			_-> rrel_1:: rrel_fixed:: rrel_scp_const:: statement;;
+			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc1;;
+			_-> rrel_3:: rrel_fixed:: rrel_scp_var:: _element;;
+
+			_=> nrel_then:: _..operator7A;;
+			_=> nrel_else:: _..operator5;;
+			*);;
 
 		_-> _..operator7A
 			(*
@@ -138,23 +150,9 @@ _-> rrel_2:: rrel_in:: _input_arc;
 			_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
 			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: rrel_example;;
 
-			_=> nrel_then:: _..operator7;;
-			_=> nrel_else:: _..operator5;;
-			*);;	
-
-		_-> _..operator7
-			(*
-			<-_ searchElStr5;;
-
-			_-> rrel_1:: rrel_fixed:: rrel_scp_var:: _file;;
-			_-> rrel_2:: rrel_assign:: rrel_scp_var:: rrel_const:: rrel_common:: rrel_arc:: _arc1;;
-			_-> rrel_3:: rrel_fixed:: rrel_scp_const:: format_png;;
-			_-> rrel_4:: rrel_assign:: rrel_scp_var:: rrel_pos_const_perm:: _arc2;;
-			_-> rrel_5:: rrel_fixed:: rrel_scp_const:: nrel_format;;
-
 			_=> nrel_then:: _..operator8;;
 			_=> nrel_else:: _..operator5;;
-			*);;
+			*);;	
 
 		_-> _..operator8
 			(*

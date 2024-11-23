@@ -6,7 +6,7 @@ sc_agent_of_images_searching
 <- abstract_sc_agent;
 
 => nrel_primary_initiation_condition:
-	(sc_event_after_generate_outgoing_arc => question_initiated);
+	(sc_event_after_generate_outgoing_arc => action_initiated);
 
 => nrel_initiation_condition_and_result: 
 	(..sc_agent_condition_images => ..sc_agent_result_images);
