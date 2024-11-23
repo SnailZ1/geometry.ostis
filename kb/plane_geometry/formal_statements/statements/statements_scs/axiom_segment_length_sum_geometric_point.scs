@@ -2,7 +2,10 @@ axiom_segment_length_sum_geometric_point <- statement;;
 
 axiom_segment_length_sum_geometric_point -> rrel_key_sc_element: concept_segment; concept_geometric_point; nrel_length;;
 
+axiom_segment_length_sum_geometric_point <- rrel_axiom: s_sd_geometric_points;;
+
 axiom_segment_length_sum_geometric_point => nrel_main_idtf: [Акс.(отрезок; геометрическая точка; длина*)] (*<- lang_ru;;*);;
+
 axiom_segment_length_sum_geometric_point => nrel_main_idtf: [Ax.(segment; geometric point; length*)] (* <- lang_en;; *);;
 
 axiom_segment_length_sum_geometric_point <= nrel_sc_text_translation: 
@@ -11,4 +14,13 @@ axiom_segment_length_sum_geometric_point <= nrel_sc_text_translation:
 		-> rrel_example: 
 			[Длина отрезка равна сумме длин частей, на которые он разбивается своей точкой.] 
 			(* <- lang_ru;; *);; 
+			
+		*);;
+		
+axiom_segment_length_sum_geometric_point <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example: 
+			[The length of a segment equals to the sum of the lengths of the parts into which it's divided by its point.] 
+			(* <- lang_en;; *);; 
 		*);;

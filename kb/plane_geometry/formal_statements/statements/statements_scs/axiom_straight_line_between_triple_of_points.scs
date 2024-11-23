@@ -2,9 +2,10 @@ axiom_straight_line_between_triple_of_points <- statement;;
 
 axiom_straight_line_between_triple_of_points -> rrel_key_sc_element: concept_straight_line; concept_triple_of_points; nrel_between;;
 
-axiom_straight_line_between_triple_of_points <- rrel_axiom: section_subject_domain_of_geometric_points;;
+axiom_straight_line_between_triple_of_points <- rrel_axiom: s_sd_geometric_points;;
 
 axiom_straight_line_between_triple_of_points => nrel_main_idtf: [Акс.(прямая; между*; тройка точек)] (*<- lang_ru;;*);;
+
 axiom_straight_line_between_triple_of_points => nrel_main_idtf: [Ax.(straight line; between*; triple of points)] (*<- lang_en;;*);;
 
 axiom_straight_line_between_triple_of_points <= nrel_sc_text_translation: 

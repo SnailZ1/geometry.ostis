@@ -2,7 +2,10 @@ statement -> axiom_geometric_point_belonging_straight_line_parallelism;;
 
 axiom_geometric_point_belonging_straight_line_parallelism -> rrel_key_sc_element: concept_geometric_point; concept_straight_line; concept_plane; nrel_parallelism;;
 
+axiom_geometric_point_belonging_straight_line_parallelism <- rrel_axiom: s_sd_geometric_points;;
+
 axiom_geometric_point_belonging_straight_line_parallelism => nrel_main_idtf: [Акс.(геометрическая точка; прямая; плоскость; параллельность*)] (* <- lang_ru;; *);;
+
 axiom_geometric_point_belonging_straight_line_parallelism => nrel_main_idtf: [Ax.(geometric point; straight line; plane; parallelism*)] (* <- lang_en;; *);;
 
 axiom_geometric_point_belonging_straight_line_parallelism <= nrel_sc_text_translation: ...
@@ -10,4 +13,11 @@ axiom_geometric_point_belonging_straight_line_parallelism <= nrel_sc_text_transl
 	-> rrel_example:
 		[Через точку, не лежащую на данной прямой, можно провести на плоскости не более одной прямой параллельной данной.] 
 		(* <- lang_ru;; *);;
+	*);;
+
+axiom_geometric_point_belonging_straight_line_parallelism <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Through a point, not lying on a given line, it's can be drawn on the plane at most one straight line parallel to the given one.] 
+		(* <- lang_en;; *);;
 	*);;

@@ -1,6 +1,6 @@
 axiom_straight_line_triple_of_points <- statement;;
 
-axiom_straight_line_triple_of_points <- rrel_axiom: section_subject_domain_of_geometric_points;;
+axiom_straight_line_triple_of_points <- rrel_axiom: s_sd_geometric_points;;
 
 axiom_straight_line_triple_of_points -> rrel_key_sc_element: concept_straight_line; concept_triple_of_points;;
 
@@ -19,7 +19,7 @@ axiom_straight_line_triple_of_points <= nrel_sc_text_translation:
 		... 
 		(* 
 		-> rrel_example: 
-			[There are three points at least that don't lie on a straight line.] 
+			[There are at least three points, that do not lie on a straight line.] 
 			(* <- lang_en;; *);; 
 		*);;
 
