@@ -2,6 +2,8 @@ statement -> axiom_geometric_point_belonging_straight_line;;
 
 axiom_geometric_point_belonging_straight_line -> rrel_key_sc_element: concept_geometric_point; concept_straight_line;;
 
+axiom_geometric_point_belonging_straight_line <- rrel_axiom: s_sd_geometric_points;;
+
 axiom_geometric_point_belonging_straight_line => nrel_main_idtf: [Акс.(прямая; точка)] (* <- lang_ru;; *);;
 axiom_geometric_point_belonging_straight_line => nrel_main_idtf: [Ax.(straight line; geometric point)] (* <- lang_en;; *);;
 
@@ -10,4 +12,11 @@ axiom_geometric_point_belonging_straight_line <= nrel_sc_text_translation: ...
 	-> rrel_example:
 		[Какова бы ни была прямая, существуют точки, принадлежащие этой прямой, и точки, не принадлежащие ей.] 
 		(* <- lang_ru;; *);;
+	*);;
+
+axiom_geometric_point_belonging_straight_line <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[Whatever the line is, there are points that belong to this line and points that do not belong to it.] 
+		(* <- lang_en;; *);;
 	*);;

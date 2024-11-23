@@ -2,7 +2,10 @@ axiom_plane_geometric_point_intersiction_line <- statement;;
 
 axiom_plane_geometric_point_intersiction_line -> rrel_key_sc_element: concept_plane; concept_geometric_point; concept_straight_line; nrel_intersection;;
 
+axiom_plane_geometric_point_intersiction_line <- rrel_axiom: s_sd_geometric_points;;
+
 axiom_plane_geometric_point_intersiction_line => nrel_main_idtf: [Акс.(плоскость; геометрическая точка; прямая; пересечение*)] (* <-lang_ru;; *);;
+
 axiom_plane_geometric_point_intersiction_line => nrel_main_idtf: [Ax.(plane; geometric point; intersection*; straight line)] (* <-lang_en;; *);;
 
 axiom_plane_geometric_point_intersiction_line=> nrel_idtf: [Аксиома о пересечении плоскостей] (* <-lang_ru;; *);;
@@ -14,5 +17,12 @@ axiom_plane_geometric_point_intersiction_line <= nrel_sc_text_translation:
 	(*
 		-> rrel_example: 
 		[Если две различные плоскости имеют общую точку, то они пересекаются по проходящей через эту точку прямой, все точки которой являются общими для обеих плоскостей.](* <- lang_ru;; *);;
+	*);;
+	
+axiom_plane_geometric_point_intersiction_line <= nrel_sc_text_translation: 
+	...
+	(*
+		-> rrel_example: 
+		[If two different planes have the same point, then they intersect along a straight line passing through this point, all points of which are the same to both planes.](* <- lang_en;; *);;
 	*);;
 

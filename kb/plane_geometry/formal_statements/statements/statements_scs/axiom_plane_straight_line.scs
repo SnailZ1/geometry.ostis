@@ -2,6 +2,8 @@ statement -> axiom_plane_straight_line;;
 
 axiom_plane_straight_line -> rrel_key_sc_element: concept_plane; concept_straight_line; concept_half_plane;;
 
+axiom_plane_straight_line <- rrel_axiom: s_sd_geometric_points;;
+
 axiom_plane_straight_line => nrel_main_idtf: [Акс.(прямая; плоскость; полуплоскость)] (* <- lang_ru;; *);;
 axiom_plane_straight_line => nrel_main_idtf: [Ax.(straight line; plane; half plane)] (* <- lang_en;; *);;
 
@@ -10,4 +12,11 @@ axiom_plane_straight_line <= nrel_sc_text_translation: ...
 	-> rrel_example:
 		[Прямая разбивает плоскость на две полуплоскости.] 
 		(* <- lang_ru;; *);;
+	*);;
+	
+axiom_plane_straight_line <= nrel_sc_text_translation: ...
+	(*
+	-> rrel_example:
+		[A straight line divides a plane into two half-planes.]
+		(* <- lang_en;; *);;
 	*);;
