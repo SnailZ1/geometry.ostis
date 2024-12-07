@@ -32,6 +32,15 @@ plugins:
 nav:
   - Home: index.md
   - Home: index.ru.md
+  - Editor:
+    - Summary: editor/Summary.md
+    - Summary: editor/Summary.ru.md
+    - Login Page: editor/Login.md
+    - Login Page: editor/Login.ru.md
+    - Editor: editor/Editor.md
+    - Editor: editor/Editor.ru.md
+    - Chat: editor/Chat.md
+    - Chat: editor/Chat.ru.md
   - Build:
     - Ubuntu-18.04: build/build1804.md
     - Ubuntu-18.04: build/build1804.ru.md
