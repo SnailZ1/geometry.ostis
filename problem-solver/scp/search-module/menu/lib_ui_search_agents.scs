@@ -9,7 +9,10 @@ ui_menu_na_search_agents <- ui_user_command_class_noatom;
 	ui_menu_agent_of_definitions_searching;
 	ui_menu_agent_of_key_concepts_searching;
 	ui_menu_agent_of_statements_searching;
-	ui_menu_agent_of_theorems_searching
+	ui_menu_agent_of_theorems_searching;
+	ui_menu_agent_of_tasks_searching;
+	ui_menu_agent_of_statements_proofs_searching;
+	ui_menu_agent_of_relations_searching
 	};;
 
 *];;

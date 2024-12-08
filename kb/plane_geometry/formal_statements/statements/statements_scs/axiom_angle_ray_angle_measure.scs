@@ -2,7 +2,10 @@ axiom_angle_ray_angle_measure <- statement;;
 
 axiom_angle_ray_angle_measure -> rrel_key_sc_element: concept_angle; nrel_angle_measure; concept_ray;;
 
+axiom_angle_ray_angle_measure <- rrel_axiom: s_sd_rays;;
+
 axiom_angle_ray_angle_measure => nrel_main_idtf: [Акс.(угол; луч; мера угла*)] (*<- lang_ru;;*);;
+
 axiom_angle_ray_angle_measure => nrel_main_idtf: [Ax.(angle; ray; angle measure*)] (*<- lang_en;;*);;
 
 axiom_angle_ray_angle_measure <= nrel_sc_text_translation: 
@@ -11,4 +14,12 @@ axiom_angle_ray_angle_measure <= nrel_sc_text_translation:
 		-> rrel_example: 
 			[Градусная мера угла равна сумме градусных мер углов, на которые он разбивается любым лучом, выходящим из его вершины.] 
 			(* <- lang_ru;; *);; 
+		*);;
+		
+axiom_angle_ray_angle_measure <= nrel_sc_text_translation: 
+		... 
+		(* 
+		-> rrel_example:
+			[The degree measure of an angle equals to the sum of the degree measures of the angles into which it is divided by any ray emanating from its vertex.] 
+			(* <- lang_en;; *);; 
 		*);;
